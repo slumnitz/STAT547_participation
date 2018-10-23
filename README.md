@@ -10,7 +10,7 @@ Class folder | Participation
 [cm102]() | Regular expressions and character data
 [cm103]() | purrr, list-columns, nested data frames
 [cm104]() | Part II
-[cm105]()) | Build your first R package
+[cm105]() | Build your first R package
 [cm106]() | Part II
 [cm107]() | shiny apps, and related tools
 [cm108]() | Part II
