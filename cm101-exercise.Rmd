@@ -84,9 +84,9 @@ test_that("Simple cases work", {
 Because you will eventually forget the function specifics.
 
 ```{r}
-max_minus_min(numeric(0))
-max_minus_min(gapminder)
-max_minus_min(gapminder$country)
+# max_minus_min(numeric(0))
+# max_minus_min(gapminder)
+# max_minus_min(gapminder$country)
 ```
 
 These don't break!
@@ -104,8 +104,8 @@ We want:
 Check out `stopifnot` and `stop`:
 
 ```{r}
-stopifnot(FALSE)
-stop("Here's my little error message.")
+# stopifnot(FALSE) # FALSE is not TRUE
+# stop("Here's my little error message.")
 ```
 
 Your turn:  Use two methods:
@@ -114,9 +114,10 @@ Your turn:  Use two methods:
 
 ```{r}
 mmm1 <- function(x) {
-    FILL_THIS_IN
+    stopifnot(!is.numeric(x))
     max(x) - min(x)
 }
+# mmm1("hello")
 ```
 
 2. Using `stop` and an `if` statement, Modify the max-min function to:
@@ -126,29 +127,31 @@ mmm1 <- function(x) {
 ```{r}
 mmm2 <- function(x) {
     if (!is.numeric(x)) {
-        FILL_THIS_IN
+        stop(paste("Expecting x to be numeric. You gave me", typeof(x)))
     }
     max(x) - min(x)
 }
+# mmm2("hello") # Expecting x to be numeric. You gave me character
 ```
 
 Try breaking the function now:
 
 ```{r}
-mmm1((numeric(0)))
-mmm1(gapminder)
-mmm1(gapminder$country)
-mmm1(gapminder[c('lifeExp', 'gdpPercap', 'pop')])
-mmm1(c(TRUE, TRUE, FALSE, TRUE, TRUE))
+# mmm1((numeric(0))) # !is.numeric(x) is not TRUE
+# mmm1(gapminder)
+# mmm1(gapminder$country)
+# mmm1(gapminder[c('lifeExp', 'gdpPercap', 'pop')])
+# mmm1(c(TRUE, TRUE, FALSE, TRUE, TRUE))
 
-mm2((numeric(0)))
-mmm2(gapminder)
-mmm2(gapminder$country)
-mmm2(gapminder[c('lifeExp', 'gdpPercap', 'pop')])
-mmm2(c(TRUE, TRUE, FALSE, TRUE, TRUE))
+# mmm2((numeric(0))) # no non-missing arguments to max; returning -Infno non-missing arguments to min; returning Inf[1] -Inf
+# mmm2(gapminder)
+# mmm2(gapminder$country)
+# mmm2(gapminder[c('lifeExp', 'gdpPercap', 'pop')])
+# mmm2(c(TRUE, TRUE, FALSE, TRUE, TRUE))
 ```
 
 ## Naming, and generalizing to quantile difference
+
 
 Let's generalize the function to take the difference in two quantiles:
 
