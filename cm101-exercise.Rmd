@@ -1,6 +1,7 @@
 ---
 title: 'STAT 547 Class Meeting 01: Writing your own Functions'
 output:
+  github_document:
   html_document:
     df_print: paged
 editor_options:
