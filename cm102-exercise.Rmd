@@ -313,13 +313,13 @@ Countries that end in "land":
 
 ```{r}
 str_view_all_match(countries, pattern = "land$")
-str_view_all_match(countries, pattern = "$")
+str_view_all_match(countries, pattern = "$") # finds the end of each line
 ```
 
 Countries that start with "Ca":
 
 ```{r}
-str_view_all_match(countries, pattern = "^Ca")
+str_view_all_match(countries, pattern = "^Ca") # ^ = start
 ```
 
 Countries without a vowel? The word should start with a non-vowel, continue as a non-vowel, and end:
@@ -333,20 +333,20 @@ str_view_all_match(countries, "^[^aeiouAEIOU]*$")
 We can refer to parentheses groups:
 
 ```{r}
-str_view_all(c("abad", "abbd"), pattern="(a)(b)\\1")
-str_view_all(c("abad", "abbd"), pattern="(a)(b)\\2")
+str_view_all(c("abad", "abbd"), pattern="(a)(b)\\1") # I want an a followed by a single b, and what was resolved in group one, so aba
+str_view_all(c("abad", "abbd"), pattern="(a)(b)\\2") # abb
 ```
 
 Note that the parentheses are first resolved, THEN referred to. NOT re-executed.
 
 ```{r}
-str_view_all(c("bananas"), "(.)(.)\\1\\2.*\\1\\2")
+str_view_all(c("bananas"), "(.)(.)\\1\\2.*\\1\\2") anything followed by anything, repeat first and second grop, have any number of characters and gepead first and second group
 ```
 
 We can refer to them later in the search, too:
 
 ```{r}
-str_view_all(c("bananas", "Who can? Bananas can."), "(.)(.)\\1\\2.*\\1\\2")
+str_view_all(c("bananas", "Who can? Bananas can."), "(.)(.)\\1\\2.*\\1\\2") # advanced pattern recognition
 ```
 
 
@@ -362,7 +362,6 @@ Convert `words` to pig latin, which involves:
     - Use `str_c()`.
     
 ```{r}
-YOUR_CODE_HERE
 ```
 
 Find all countries that end in "y"
