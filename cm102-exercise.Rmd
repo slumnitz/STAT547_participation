@@ -1,8 +1,10 @@
 ---
 title: "STAT 547 Class Meeting 02 Worksheet"
-output: html_notebook
-editor_options: 
-  chunk_output_type: inline
+output: 
+  html_notebook:
+   github_document:
+  editor_options: 
+    chunk_output_type: inline
 ---
 
 ```{r}
@@ -37,7 +39,8 @@ There's that famous sentence about the quick brown fox that contains all letters
 Not quite the sentence I was thinking of. How many words does it contain? Use `str_split(string, pattern)`, noting its output (list).
 
 ```{r}
-str_split(FILL_THIS_IN, FILL_THIS_IN)
+str_split(fox, pattern=" ")[[1]] %>% length() # output is always a list
+str_split(sentences, pattern=" ") %>% head()
 ```
 
 Exercise: does this sentence contain all letters of the alphabet? Hints: 
@@ -48,10 +51,15 @@ Exercise: does this sentence contain all letters of the alphabet? Hints:
 
 ```{r}
 fox %>% 
-  str_split(FILL_THIS_IN) %>% 
-  FILL_THIS_IN
+  str_split("") %>% 
+  `[[`(1) %>% 
+  str_to_lower() %>% 
+  table()
 ```
 
+NOTES: l[[1]] -> double brackets give me the single argument at this place
+[1] -> give me the whole thing
+list in R similar to dictionary
 
 Working in a data frame? `tidyr` has its own version of this. Here's an example from Resource 1, with the fruit data:
 
@@ -65,7 +73,7 @@ Demo: we can substitute, too. Replace the word "fox" with "giraffe" using `str_r
 
 ```{r}
 fox %>% 
-    str_replace(FILL_THIS_IN)
+    str_replace(pattern = "fox", replacement = "giraffe")
 ```
 
 Know the position you want to extract/replace? Try `str_sub()`.
@@ -75,7 +83,7 @@ Know the position you want to extract/replace? Try `str_sub()`.
 ```{r}
 fruit %>% head
 fruit %>% 
-    str_pad(width=7, side="right", pad="$") %>% 
+    str_pad(width=7, side="right", pad="$") %>% # at least 7 characters, add more if not using $
     head()
 ```
 
