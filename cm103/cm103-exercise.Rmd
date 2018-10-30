@@ -1,6 +1,7 @@
 ---
 title: "cm103 Worksheet"
 output: github_document
+always_allow_html: yes
 ---
 
 ```{r}
@@ -94,7 +95,7 @@ str(got_chars, list.len = 4, max.level = 2)
 2. Interactive exploration: `View()` and `listviewer::jsonedit(..., mode = "view")`
 
 ```{r}
-View(got_chars)
+# View(got_chars)
 jsonedit(got_chars, mode="view")
 ```
 
@@ -162,7 +163,12 @@ vec1 <- function(x) x[1]
 map_chr(wesanderson, vec1)
 
 # Method 2: head
+map_chr(wesanderson, head, n=1)
 
+# Method 3:
+map_chr(wesanderson, `[`, 1)
+
+# map_dbl is not working
 ```
 
 2. Check that each character's list entry in `got_chars` has the same names as everyone else (that is, list component names, not character names). Here's one way to do it:
@@ -171,7 +177,7 @@ map_chr(wesanderson, vec1)
     3. Then, apply the `table()` function.
 
 ```{r}
-YOUR_CODE_HERE
+# YOUR_CODE_HERE
 ```
 
 
@@ -183,7 +189,7 @@ We can do the subsetting much easier with these shortcuts: just replace function
 - name you'd like to subset by.
 
 ```{r}
-map_chr(wesanderson, function(x)) # %>% unname()
+map_chr(wesanderson, 1) %>% unname() # no vector names
 ```
 
 
@@ -197,8 +203,10 @@ map_chr(wesanderson, function(x)) # %>% unname()
 
 Note: each character's list entry has a component named `titles` as the 9th entry.
 
+
 ```{r}
-YOUR_CODE_HERE
+got_chars %>%
+  map("titles")
 ```
 
 2. For the `got_chars` data:
@@ -209,6 +217,8 @@ YOUR_CODE_HERE
 
 ```{r}
 desired_info <- c("name", "born")
+map(got_chars, `[`, desired_info) %>% head()
+map_dfr(got_chars, `[`, desired_info)
 ```
 
 Note: as Jenny says, it's always safer (from a programming perspective) to work with output that's more predictable. The following would be safer, and is still readable:
