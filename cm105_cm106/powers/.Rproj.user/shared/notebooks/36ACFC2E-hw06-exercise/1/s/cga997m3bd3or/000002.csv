@@ -1,0 +1,5 @@
+"0","mysummary_table <- function(df) {"
+"0","  tab <- data.frame("
+"0","    ""rows"" = nrow(df))"
+"0","  return(tab)"
+"0","}"

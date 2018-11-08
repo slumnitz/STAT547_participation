@@ -1,0 +1,119 @@
+---
+title: 'Homework 06: Data wrangling wrap up'
+author: Stefanie Lumnitz
+date: "`r format(Sys.time(), '%d %B, %Y')`"   
+output:  
+  github_document:  
+    toc: yes
+always_allow_html: yes
+---
+
+```{r setup, include = FALSE, cache = FALSE}
+knitr::opts_chunk$set(error = TRUE, collapse = TRUE, comment = "#>")
+```
+
+### Load required packages
+
+```{r}
+library(singer)
+library(leaflet)
+suppressPackageStartupMessages(library(purrr))
+suppressPackageStartupMessages(library(tidyverse))
+suppressPackageStartupMessages(library(knitr))
+```
+
+
+## Exercise 4: Geospatial R and the `singer` data
+
+The `singer_location` dataframe in the `singer` package contains geographical information stored in two different formats: 
+
+1. as a (dirty!) variable named `city`; 
+2. as a latitude / longitude pair (stored in `latitude`, `longitude` respectively). 
+
+I am trying to clean up the `city` variable by adding addresses in the same format to each observation respectively. I will herefore use a technique called reverse geocoding:
+
+> **Reverse geocoding** is the process of converting geographic coordinates into a human-readable address.
+
+The exercise suggests to use:
+
+> **ggmap::revgeocode**: reverse geocodes a longitude/latitude location using Google Maps. Note that in most cases by using this function you are agreeing to the Google Maps API Terms of Service at https://developers.google.com/maps/terms.
+
+Resources:
+[**Google Maps API**](https://developers.google.com/maps/documentation/geocoding/start?csw=1)
+
+Since I am using the daily limit of this very same required API key I decided to not use `revgeocode` and Google maps for this problem. I discovered a second package called [`revgeo`](https://github.com/mhudecheck/revgeo):
+
+> **revgeo::revgeo**: Enables the use of the Photon geocoder for OpenStreetMap, Google Maps, and Bing to reverse geocode coordinate pairs. Photon allows for unlimited geocode queries, while Google Maps and Bing provide a little more information for 'out of the way' locations. Google Maps and Bing require an API key, and Google Maps limits users to 2,500 free queries a day.
+
+I will test if this package and the `Photon API` is sufficient for my purpose.
+
+### Singer dataset:
+
+Let's assess first what the singer dataset contains, before starting to manipulate it:
+
+```{r}
+glimpse(singer_locations)
+```
+
+In order to make things a little more clear, let's only look at a subset of `singer_locations`, including the variables `artist`, `latitude`, `longitude`, `city` and for fun later on `hottness` and `familiarity`.
+
+```{r}
+geo_singer <- singer_locations %>% 
+  select(artist = artist_name,
+         latitude = latitude,
+         longitude = longitude,
+         city = city,
+         hottness = artist_hotttnesss,
+         familiarity = artist_familiarity)
+```
+
+Furthermore, the task's description gives a hint that not all of the observations have latitude and longitude values. I can simply drop all observations with NA values in latitude and longitude. Additionally, I will remove artists that can be found twice in the dataset.
+
+```{r}
+geo_singer_clean <- geo_singer %>% 
+  distinct(artist, .keep_all = TRUE) %>% # remove duplicate artist names
+  na.omit(cols=c("latitude", "longitude")) # remove all rows with NA values in lat or lon
+geo_singer_clean %>% 
+  head(10) %>% 
+  kable()
+```
+
+```{r}
+mysummary_table <- function(df) {
+  tab <- data.frame(
+    "rows" = nrow(df))
+  return(tab)
+}
+```
+
+```{r}
+mysummary_table(geo_singer)
+mysummary_table(geo_singer_clean)
+```
+
+
+```{r}
+geo_singer_clean$latitude
+```
+
+
+```{r}
+singer_city <-
+  map2(geo_singer_clean$longitude, geo_singer_clean$latitude, revgeo)
+singer_city
+```
+```{r}
+library(revgeo)
+```
+
+```{r}
+revgeo(longitude=-77.0229529, latitude=38.89283435)
+```
+
+```{r}
+singer_locations %>%  
+  leaflet()  %>%   
+  addTiles() %>%  
+  addCircles(popup = ~artist_name)
+```
+

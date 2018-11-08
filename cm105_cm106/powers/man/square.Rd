@@ -20,4 +20,5 @@ Square the input
 \note{
 for Namespace, add at-export,
 run document() in console, click Install and Restart in Build
+check out semantic versioning needed in the description
 }

@@ -1,0 +1,7 @@
+"0","geo_singer <- singer_locations %>% "
+"0","  select(artist = artist_name,"
+"0","         latitude = latitude,"
+"0","         longitude = longitude,"
+"0","         city = city,"
+"0","         hottness = artist_hotttnesss,"
+"0","         familiarity = artist_familiarity)"

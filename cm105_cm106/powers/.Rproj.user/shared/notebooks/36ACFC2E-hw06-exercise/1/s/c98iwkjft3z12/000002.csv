@@ -1,0 +1,46 @@
+"0","glimpse(singer_locations)"
+"1","Observations: 10,100
+"
+"1","Variables: 14
+"
+"1","$ track_id           <chr> ""TRWICRA128F42368DB"", ""TRXJANY128F42246FC"", ""TRIKPC...
+"
+"1",""
+"1","$ title              <chr> ""The Conversation (Cd)"", ""Lonely Island"", ""Here's T...
+"
+"1",""
+"1","$ song_id            <chr> ""SOSURTI12A81C22FB8"", ""SODESQP12A6D4F98EF"", ""SOQUYQ...
+"
+"1",""
+"1","$ release            <chr> ""Even If It Kills Me"", ""The Duke Of Earl"", ""Impromp...
+"
+"1",""
+"1","$ artist_id          <chr> ""ARACDPV1187FB58DF4"", ""ARYBUAO1187FB3F4EB"", ""AR4111...
+"
+"1",""
+"1","$ artist_name        <chr> ""Motion City Soundtrack"", ""Gene Chandler"", ""Paul Ho...
+"
+"1",""
+"1","$ year               <int> 2007, 2004, 1998, 1995, 1968, 2006, 2003, 2007, 196...
+"
+"1",""
+"1","$ duration           <dbl> 170.4485, 106.5530, 527.5947, 695.1179, 237.3220, 1...
+"
+"1",""
+"1","$ artist_hotttnesss  <dbl> 0.6410183, 0.3937627, 0.4306226, 0.3622792, 0.41075...
+"
+"1",""
+"1","$ artist_familiarity <dbl> 0.8230522, 0.5700167, 0.5039940, 0.4773099, 0.53034...
+"
+"1",""
+"1","$ latitude           <dbl> NA, 41.88415, 40.71455, NA, 42.33168, 40.99471, NA,...
+"
+"1",""
+"1","$ longitude          <dbl> NA, -87.63241, -74.00712, NA, -83.04792, -77.60454,...
+"
+"1",""
+"1","$ name               <chr> NA, ""Gene Chandler"", ""Paul Horn"", NA, ""Dorothy Ashb...
+"
+"1",""
+"1","$ city               <chr> NA, ""Chicago, IL"", ""New York, NY"", NA, ""Detroit, MI...
+"
