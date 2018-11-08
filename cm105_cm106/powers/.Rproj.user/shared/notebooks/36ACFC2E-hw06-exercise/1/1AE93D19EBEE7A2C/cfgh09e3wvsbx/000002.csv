@@ -1,0 +1,8 @@
+"0","suppressPackageStartupMessages(library(gapminder))"
+"0","suppressPackageStartupMessages(library(tidyverse))"
+"0","suppressPackageStartupMessages(library(knitr))"
+"0","suppressPackageStartupMessages(library(plotly))"
+"0","suppressPackageStartupMessages(library(gridExtra))"
+"0","suppressPackageStartupMessages(library(grid))"
+"0","suppressPackageStartupMessages(library(scales))"
+"0","suppressPackageStartupMessages(library(gganimate))"

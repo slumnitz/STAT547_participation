@@ -1,0 +1,7 @@
+"0","geo_singer_clean <- geo_singer %>% "
+"0","  distinct(artist, .keep_all = TRUE) %>% # remove duplicate artist names"
+"0","  na.omit(cols=c(""latitude"", ""longitude"")) # remove all rows with NA values in lat or lon"
+"0",""
+"0","geo_singer_clean %>% "
+"0","  head(10) %>% "
+"0","  kable()"

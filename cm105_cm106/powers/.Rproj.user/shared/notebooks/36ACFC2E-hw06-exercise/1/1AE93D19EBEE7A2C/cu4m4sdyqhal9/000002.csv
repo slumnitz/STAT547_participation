@@ -1,0 +1,7 @@
+"0","singer_locations %>%  "
+"0","  leaflet()  %>%   "
+"0","  addTiles() %>%  "
+"0","  addCircles(popup = ~artist_name)"
+"2","Assuming ""longitude"" and ""latitude"" are longitude and latitude, respectively
+"
+"2","Data contains 5968 rows with either missing or invalid lat/lon values and will be ignored"
