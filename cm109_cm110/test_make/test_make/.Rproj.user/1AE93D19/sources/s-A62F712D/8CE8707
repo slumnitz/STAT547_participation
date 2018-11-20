@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1542738179659.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "169518962",
+    "id" : "8CE8707",
+    "lastKnownWriteTime" : 1533832136,
+    "last_content_update" : 1533832136,
+    "path" : "~/code/STATS545/STAT547_participation/cm109_cm110/cm109-automation_examples/01_automation-example_just-r/02_aggregate-plot.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
