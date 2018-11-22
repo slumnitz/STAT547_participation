@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1542751046041.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "849888283",
+    "id" : "22B2D446",
+    "lastKnownWriteTime" : 1542751571,
+    "last_content_update" : 1542751571390,
+    "path" : "~/code/STATS545/hw08-slumnitz/Vancouver_Street_Trees/app.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "1,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

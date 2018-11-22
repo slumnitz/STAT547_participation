@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1541703844508.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F8C7F725",
+    "lastKnownWriteTime" : 1541701457,
+    "last_content_update" : 1541704153314,
+    "path" : "~/code/STATS545/hw06-slumnitz/hw06-exercise.Rmd",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "21,46",
+        "last_setup_crc32" : "7644CD478517b672",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
