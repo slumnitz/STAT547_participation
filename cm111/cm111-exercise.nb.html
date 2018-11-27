@@ -1730,15 +1730,16 @@ $(document).ready(function () {
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh0aWR5dmVyc2UpXG5gYGAifQ== -->
 <pre class="r"><code>library(tidyverse)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXHUwMDFiWzMwbeKUgOKUgCBcdTAwMWJbMW1BdHRhY2hpbmcgcGFja2FnZXNcdTAwMWJbMjJtIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgCB0aWR5dmVyc2UgMS4yLjEg4pSA4pSAXHUwMDFiWzM5bVxuXHUwMDFiWzMwbVx1MDAxYlszMm3inJRcdTAwMWJbMzBtIFx1MDAxYlszNG1nZ3Bsb3QyXHUwMDFiWzMwbSAzLjEuMCAgICAgXHUwMDFiWzMybeKclFx1MDAxYlszMG0gXHUwMDFiWzM0bXB1cnJyICBcdTAwMWJbMzBtIDAuMi41XG5cdTAwMWJbMzJt4pyUXHUwMDFiWzMwbSBcdTAwMWJbMzRtdGliYmxlIFx1MDAxYlszMG0gMS40LjIgICAgIFx1MDAxYlszMm3inJRcdTAwMWJbMzBtIFx1MDAxYlszNG1kcGx5ciAgXHUwMDFiWzMwbSAwLjcuN1xuXHUwMDFiWzMybeKclFx1MDAxYlszMG0gXHUwMDFiWzM0bXRpZHlyICBcdTAwMWJbMzBtIDAuOC4xICAgICBcdTAwMWJbMzJt4pyUXHUwMDFiWzMwbSBcdTAwMWJbMzRtc3RyaW5nclx1MDAxYlszMG0gMS4zLjFcblx1MDAxYlszMm3inJRcdTAwMWJbMzBtIFx1MDAxYlszNG1yZWFkciAgXHUwMDFiWzMwbSAxLjEuMSAgICAgXHUwMDFiWzMybeKclFx1MDAxYlszMG0gXHUwMDFiWzM0bWZvcmNhdHNcdTAwMWJbMzBtIDAuMy4wXHUwMDFiWzM5bVxuXHUwMDFiWzMwbeKUgOKUgCBcdTAwMWJbMW1Db25mbGljdHNcdTAwMWJbMjJtIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgCB0aWR5dmVyc2VfY29uZmxpY3RzKCkg4pSA4pSAXG5cdTAwMWJbMzFt4pyWXHUwMDFiWzMwbSBcdTAwMWJbMzRtZHBseXJcdTAwMWJbMzBtOjpcdTAwMWJbMzJtZmlsdGVyKClcdTAwMWJbMzBtIG1hc2tzIFx1MDAxYlszNG1zdGF0c1x1MDAxYlszMG06OmZpbHRlcigpXG5cdTAwMWJbMzFt4pyWXHUwMDFiWzMwbSBcdTAwMWJbMzRtZHBseXJcdTAwMWJbMzBtOjpcdTAwMWJbMzJtbGFnKClcdTAwMWJbMzBtICAgIG1hc2tzIFx1MDAxYlszNG1zdGF0c1x1MDAxYlszMG06OmxhZygpXHUwMDFiWzM5bVxuIn0= -->
+<!-- rnb-output-begin eyJkYXRhIjoiXHUwMDFiWzMwbeKUgOKUgCBcdTAwMWJbMW1BdHRhY2hpbmcgcGFja2FnZXNcdTAwMWJbMjJtIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgCB0aWR5dmVyc2UgMS4yLjEg4pSA4pSAXHUwMDFiWzM5bVxuXHUwMDFiWzMwbVx1MDAxYlszMm3inJRcdTAwMWJbMzBtIFx1MDAxYlszNG1nZ3Bsb3QyXHUwMDFiWzMwbSAzLjEuMCAgICAgXHUwMDFiWzMybeKclFx1MDAxYlszMG0gXHUwMDFiWzM0bXB1cnJyICBcdTAwMWJbMzBtIDAuMi41XG5cdTAwMWJbMzJt4pyUXHUwMDFiWzMwbSBcdTAwMWJbMzRtdGliYmxlIFx1MDAxYlszMG0gMS40LjIgICAgIFx1MDAxYlszMm3inJRcdTAwMWJbMzBtIFx1MDAxYlszNG1kcGx5ciAgXHUwMDFiWzMwbSAwLjcuN1xuXHUwMDFiWzMybeKclFx1MDAxYlszMG0gXHUwMDFiWzM0bXRpZHlyICBcdTAwMWJbMzBtIDAuOC4xICAgICBcdTAwMWJbMzJt4pyUXHUwMDFiWzMwbSBcdTAwMWJbMzRtc3RyaW5nclx1MDAxYlszMG0gMS4zLjFcblx1MDAxYlszMm3inJRcdTAwMWJbMzBtIFx1MDAxYlszNG1yZWFkciAgXHUwMDFiWzMwbSAxLjEuMSAgICAgXHUwMDFiWzMybeKclFx1MDAxYlszMG0gXHUwMDFiWzM0bWZvcmNhdHNcdTAwMWJbMzBtIDAuMy4wXHUwMDFiWzM5bVxuXHUwMDFiWzMwbeKUgOKUgCBcdTAwMWJbMW1Db25mbGljdHNcdTAwMWJbMjJtIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgCB0aWR5dmVyc2VfY29uZmxpY3RzKCkg4pSA4pSAXG5cdTAwMWJbMzFt4pyWXHUwMDFiWzMwbSBcdTAwMWJbMzRtZHBseXJcdTAwMWJbMzBtOjpcdTAwMWJbMzJtZmlsdGVyKClcdTAwMWJbMzBtICBtYXNrcyBcdTAwMWJbMzRtc3RhdHNcdTAwMWJbMzBtOjpmaWx0ZXIoKVxuXHUwMDFiWzMxbeKcllx1MDAxYlszMG0gXHUwMDFiWzM0bXB1cnJyXHUwMDFiWzMwbTo6XHUwMDFiWzMybWZsYXR0ZW4oKVx1MDAxYlszMG0gbWFza3MgXHUwMDFiWzM0bWpzb25saXRlXHUwMDFiWzMwbTo6ZmxhdHRlbigpXG5cdTAwMWJbMzFt4pyWXHUwMDFiWzMwbSBcdTAwMWJbMzRtZHBseXJcdTAwMWJbMzBtOjpcdTAwMWJbMzJtbGFnKClcdTAwMWJbMzBtICAgICBtYXNrcyBcdTAwMWJbMzRtc3RhdHNcdTAwMWJbMzBtOjpsYWcoKVx1MDAxYlszOW1cbiJ9 -->
 <pre><code>[30m── [1mAttaching packages[22m ──────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──[39m
 [30m[32m✔[30m [34mggplot2[30m 3.1.0     [32m✔[30m [34mpurrr  [30m 0.2.5
 [32m✔[30m [34mtibble [30m 1.4.2     [32m✔[30m [34mdplyr  [30m 0.7.7
 [32m✔[30m [34mtidyr  [30m 0.8.1     [32m✔[30m [34mstringr[30m 1.3.1
 [32m✔[30m [34mreadr  [30m 1.1.1     [32m✔[30m [34mforcats[30m 0.3.0[39m
 [30m── [1mConflicts[22m ─────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-[31m✖[30m [34mdplyr[30m::[32mfilter()[30m masks [34mstats[30m::filter()
-[31m✖[30m [34mdplyr[30m::[32mlag()[30m    masks [34mstats[30m::lag()[39m</code></pre>
+[31m✖[30m [34mdplyr[30m::[32mfilter()[30m  masks [34mstats[30m::filter()
+[31m✖[30m [34mpurrr[30m::[32mflatten()[30m masks [34mjsonlite[30m::flatten()
+[31m✖[30m [34mdplyr[30m::[32mlag()[30m     masks [34mstats[30m::lag()[39m</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShydmVzdClcbmBgYCJ9 -->
 <pre class="r"><code>library(rvest)</code></pre>
@@ -1793,9 +1794,6 @@ The following object is masked from ‘package:readr’:
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2ltcGxlX3BhZ2UgPC0gcmVhZF9odG1sKFwiLi9jbTExMS1zaW1wbGVfc2NyaXB0Lmh0bWxcIilcbmBgYCJ9 -->
 <pre class="r"><code>simple_page &lt;- read_html(&quot;./cm111-simple_script.html&quot;)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3I6ICcuL2NtMTExLXNpbXBsZV9zY3JpcHQuaHRtbCcgZG9lcyBub3QgZXhpc3QgaW4gY3VycmVudCB3b3JraW5nIGRpcmVjdG9yeSAoJy9Vc2Vycy9zdGVmZmllL2NvZGUvU1RBVFM1NDUvaHcwOS1zbHVtbml0eicpLlxuIn0= -->
-<pre><code>Error: './cm111-simple_script.html' does not exist in current working directory ('/Users/steffie/code/STATS545/hw09-slumnitz').</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <ol start="2" style="list-style-type: decimal">
@@ -1806,6 +1804,25 @@ The following object is masked from ‘package:readr’:
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2ltcGxlX3BhZ2UgJT4lIGh0bWxfc3RydWN0dXJlKClcbmBgYCJ9 -->
 <pre class="r"><code>simple_page %&gt;% html_structure()</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiPGh0bWw+XG4gIDxib2R5PlxuICAgIHt0ZXh0fVxuICAgIDxoMj5cbiAgICAgIHt0ZXh0fVxuICAgIHt0ZXh0fVxuICAgIDxwPlxuICAgICAge3RleHR9XG4gICAgICA8YSBbaHJlZl0+XG4gICAgICAgIHt0ZXh0fVxuICAgIHt0ZXh0fVxuICAgIDxwPlxuICAgICAge3RleHR9XG4gICAge3RleHR9XG4gICAgPGEjd2lraSBbaHJlZl0+XG4gICAgICB7dGV4dH1cbiAgICB7dGV4dH1cbiJ9 -->
+<pre><code>&lt;html&gt;
+  &lt;body&gt;
+    {text}
+    &lt;h2&gt;
+      {text}
+    {text}
+    &lt;p&gt;
+      {text}
+      &lt;a [href]&gt;
+        {text}
+    {text}
+    &lt;p&gt;
+      {text}
+    {text}
+    &lt;a#wiki [href]&gt;
+      {text}
+    {text}</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <ol start="3" style="list-style-type: decimal">
@@ -1813,6 +1830,12 @@ The following object is masked from ‘package:readr’:
 </ol>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2ltcGxlX3BhZ2UgJT4lICBodG1sX3RleHQoKVxuYGBgIn0= -->
+<pre class="r"><code>simple_page %&gt;%  html_text()</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiXFxuSGVsbG8sIFdvcmxkIVxcblRoaXMgaXMgYSBwYXJhZ3JhcGgsIGNvbnRhaW5pbmcgYSBsaW5rIHRvIGdvb2dsZS5cXG5UaGlzIGlzIGFub3RoZXIgcGFyYWdyYXBoLCBidXQgZG9lc24ndCBoYXZlIGEgbGluayBpbiBpdC5cXG5MaW5rIHRvIFdpa2lwZWRpYVxcblwiXG4ifQ== -->
+<pre><code>[1] &quot;\nHello, World!\nThis is a paragraph, containing a link to google.\nThis is another paragraph, but doesn't have a link in it.\nLink to Wikipedia\n&quot;</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <ol start="4" style="list-style-type: decimal">
@@ -1826,14 +1849,31 @@ The following object is masked from ‘package:readr’:
 </ol>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2ltcGxlX3BhZ2UgJT4lIFxuXHRodG1sX25vZGVzKEZJTExfVEhJU19JTilcbnNpbXBsZV9wYWdlICU+JSBcblx0aHRtbF9ub2RlcyhGSUxMX1RISVNfSU4pXG5zaW1wbGVfcGFnZSAlPiUgXG5cdGh0bWxfbm9kZXMoRklMTF9USElTX0lOKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2ltcGxlX3BhZ2UgJT4lIFxuXHRodG1sX25vZGVzKFwicFwiKSAlPiUgXG5cdGh0bWxfdGV4dCgpXG5gYGAifQ== -->
 <pre class="r"><code>simple_page %&gt;% 
-    html_nodes(FILL_THIS_IN)
-simple_page %&gt;% 
-    html_nodes(FILL_THIS_IN)
-simple_page %&gt;% 
-    html_nodes(FILL_THIS_IN)</code></pre>
+    html_nodes(&quot;p&quot;) %&gt;% 
+    html_text()</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiVGhpcyBpcyBhIHBhcmFncmFwaCwgY29udGFpbmluZyBhIGxpbmsgdG8gZ29vZ2xlLlwiICAgICAgICBcblsyXSBcIlRoaXMgaXMgYW5vdGhlciBwYXJhZ3JhcGgsIGJ1dCBkb2Vzbid0IGhhdmUgYSBsaW5rIGluIGl0LlwiXG4ifQ== -->
+<pre><code>[1] &quot;This is a paragraph, containing a link to google.&quot;        
+[2] &quot;This is another paragraph, but doesn't have a link in it.&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2ltcGxlX3BhZ2UgJT4lIFxuXHRodG1sX25vZGVzKFwiYVwiKSAlPiUgXG5cdGh0bWxfdGV4dCgpXG5gYGAifQ== -->
+<pre class="r"><code>simple_page %&gt;% 
+    html_nodes(&quot;a&quot;) %&gt;% 
+    html_text()</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwibGluayB0byBnb29nbGUuXCIgICBcIkxpbmsgdG8gV2lraXBlZGlhXCJcbiJ9 -->
+<pre><code>[1] &quot;link to google.&quot;   &quot;Link to Wikipedia&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2ltcGxlX3BhZ2UgJT4lIFxuXHRodG1sX25vZGVzKFwiI3dpa2lcIikgJT4lIFxuXHRodG1sX3RleHQoKVxuYGBgIn0= -->
+<pre class="r"><code>simple_page %&gt;% 
+    html_nodes(&quot;#wiki&quot;) %&gt;% 
+    html_text()</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiTGluayB0byBXaWtpcGVkaWFcIlxuIn0= -->
+<pre><code>[1] &quot;Link to Wikipedia&quot;</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -1849,11 +1889,14 @@ simple_page %&gt;%
 </ol>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2ltcGxlX3BhZ2UgJT4lIFxuXHRodG1sX25vZGVzKEZJTExfVEhJU19JTikgJT4lIFxuXHRGSUxMX1RISVNfSU5cbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2ltcGxlX3BhZ2UgJT4lIFxuXHRodG1sX25vZGVzKFwicCBhXCIpICU+JSBcblx0aHRtbF90ZXh0KClcbmBgYCJ9 -->
 <pre class="r"><code>simple_page %&gt;% 
-    html_nodes(FILL_THIS_IN) %&gt;% 
-    FILL_THIS_IN</code></pre>
+    html_nodes(&quot;p a&quot;) %&gt;% 
+    html_text()</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwibGluayB0byBnb29nbGUuXCJcbiJ9 -->
+<pre><code>[1] &quot;link to google.&quot;</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <ol start="2" style="list-style-type: decimal">
@@ -1861,11 +1904,19 @@ simple_page %&gt;%
 </ol>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2ltcGxlX3BhZ2UgJT4lIFxuXHRodG1sX25vZGVzKEZJTExfVEhJU19JTikgJT4lIFxuXHRGSUxMX1RISVNfSU5cbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2ltcGxlX3BhZ2UgJT4lIFxuXHRodG1sX25vZGVzKFwiKlwiKSAlPiUgXG5cdGh0bWxfdGV4dCgpXG5gYGAifQ== -->
 <pre class="r"><code>simple_page %&gt;% 
-    html_nodes(FILL_THIS_IN) %&gt;% 
-    FILL_THIS_IN</code></pre>
+    html_nodes(&quot;*&quot;) %&gt;% 
+    html_text()</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiXFxuSGVsbG8sIFdvcmxkIVxcblRoaXMgaXMgYSBwYXJhZ3JhcGgsIGNvbnRhaW5pbmcgYSBsaW5rIHRvIGdvb2dsZS5cXG5UaGlzIGlzIGFub3RoZXIgcGFyYWdyYXBoLCBidXQgZG9lc24ndCBoYXZlIGEgbGluayBpbiBpdC5cXG5MaW5rIHRvIFdpa2lwZWRpYVxcblwiXG5bMl0gXCJIZWxsbywgV29ybGQhXCIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG5bM10gXCJUaGlzIGlzIGEgcGFyYWdyYXBoLCBjb250YWluaW5nIGEgbGluayB0byBnb29nbGUuXCIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG5bNF0gXCJsaW5rIHRvIGdvb2dsZS5cIiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG5bNV0gXCJUaGlzIGlzIGFub3RoZXIgcGFyYWdyYXBoLCBidXQgZG9lc24ndCBoYXZlIGEgbGluayBpbiBpdC5cIiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG5bNl0gXCJMaW5rIHRvIFdpa2lwZWRpYVwiICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4ifQ== -->
+<pre><code>[1] &quot;\nHello, World!\nThis is a paragraph, containing a link to google.\nThis is another paragraph, but doesn't have a link in it.\nLink to Wikipedia\n&quot;
+[2] &quot;Hello, World!&quot;                                                                                                                                     
+[3] &quot;This is a paragraph, containing a link to google.&quot;                                                                                                 
+[4] &quot;link to google.&quot;                                                                                                                                   
+[5] &quot;This is another paragraph, but doesn't have a link in it.&quot;                                                                                         
+[6] &quot;Link to Wikipedia&quot;                                                                                                                                 </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -1877,10 +1928,14 @@ simple_page %&gt;%
 </ul>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2ltcGxlX3BhZ2UgJT4lIFxuXHRodG1sX25vZGVzKFwiKlwiKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2ltcGxlX3BhZ2UgJT4lIFxuXHRodG1sX25vZGVzKFwiKlwiKSAlPiUgXG5cdGh0bWxfbmFtZSgpXG5gYGAifQ== -->
 <pre class="r"><code>simple_page %&gt;% 
-    html_nodes(&quot;*&quot;)</code></pre>
+    html_nodes(&quot;*&quot;) %&gt;% 
+    html_name()</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiYm9keVwiIFwiaDJcIiAgIFwicFwiICAgIFwiYVwiICAgIFwicFwiICAgIFwiYVwiICAgXG4ifQ== -->
+<pre><code>[1] &quot;body&quot; &quot;h2&quot;   &quot;p&quot;    &quot;a&quot;    &quot;p&quot;    &quot;a&quot;   </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <ul>
@@ -1888,10 +1943,20 @@ simple_page %&gt;%
 </ul>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2ltcGxlX3BhZ2UgJT4lIFxuXHRodG1sX25vZGVzKFwiYVwiKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2ltcGxlX3BhZ2UgJT4lIFxuXHRodG1sX25vZGVzKFwiYVwiKSAlPiUgXG5cdGh0bWxfYXR0cnMoKVxuYGBgIn0= -->
 <pre class="r"><code>simple_page %&gt;% 
-    html_nodes(&quot;a&quot;)</code></pre>
+    html_nodes(&quot;a&quot;) %&gt;% 
+    html_attrs()</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiW1sxXV1cbiAgICAgICAgICAgICAgIGhyZWYgXG5cImh0dHBzOi8vZ29vZ2xlLmNhXCIgXG5cbltbMl1dXG4gICAgICAgICAgICAgICAgICAgICAgICBocmVmICAgICAgICAgICAgICAgICAgICAgICAgICAgaWQgXG5cImh0dHBzOi8vd3d3Lndpa2lwZWRpYS5vcmcvXCIgICAgICAgICAgICAgICAgICAgICAgIFwid2lraVwiIFxuIn0= -->
+<pre><code>[[1]]
+               href 
+&quot;https://google.ca&quot; 
+
+[[2]]
+                        href                           id 
+&quot;https://www.wikipedia.org/&quot;                       &quot;wiki&quot; </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <ul>
@@ -1899,10 +1964,14 @@ simple_page %&gt;%
 </ul>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2ltcGxlX3BhZ2UgJT4lIFxuXHRodG1sX25vZGVzKFwiYVwiKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2ltcGxlX3BhZ2UgJT4lIFxuXHRodG1sX25vZGVzKFwiYVwiKSAlPiUgXG5cdGh0bWxfYXR0cihuYW1lPVwiaHJlZlwiKVxuYGBgIn0= -->
 <pre class="r"><code>simple_page %&gt;% 
-    html_nodes(&quot;a&quot;)</code></pre>
+    html_nodes(&quot;a&quot;) %&gt;% 
+    html_attr(name=&quot;href&quot;)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiaHR0cHM6Ly9nb29nbGUuY2FcIiAgICAgICAgICBcImh0dHBzOi8vd3d3Lndpa2lwZWRpYS5vcmcvXCJcbiJ9 -->
+<pre><code>[1] &quot;https://google.ca&quot;          &quot;https://www.wikipedia.org/&quot;</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <ul>
@@ -1910,12 +1979,23 @@ simple_page %&gt;%
 </ul>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGliYmxlKFxuXHR0ZXh0ID0gRklMTF9USElTX0lOLFxuXHR1cmwgID0gRklMTF9USElTX0lOXG4pXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGliYmxlKFxuXHR0ZXh0ID0ge3NpbXBsZV9wYWdlICU+JSBcblx0aHRtbF9ub2RlcyhcImFcIikgJT4lIFxuXHRodG1sX3RleHQoKX0sXG5cdHVybCAgPSB7c2ltcGxlX3BhZ2UgJT4lIFxuXHRodG1sX25vZGVzKFwiYVwiKSAlPiUgXG5cdGh0bWxfYXR0cihuYW1lPVwiaHJlZlwiKX1cbilcbmBgYCJ9 -->
 <pre class="r"><code>tibble(
-    text = FILL_THIS_IN,
-    url  = FILL_THIS_IN
+    text = {simple_page %&gt;% 
+    html_nodes(&quot;a&quot;) %&gt;% 
+    html_text()},
+    url  = {simple_page %&gt;% 
+    html_nodes(&quot;a&quot;) %&gt;% 
+    html_attr(name=&quot;href&quot;)}
 )</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibmNvbCI6MiwibnJvdyI6Mn0sInJkZiI6Ikg0c0lBQUFBQUFBQUExMVFzVzdESUJBOVk3dFZrTkkweXRZcFB4QXNWZXJTdVdPbkxzMUtiZW9nVTdBQXl4bjc1WGFCd0ZBWTdvNTM3eDMzK0hnN1ArTXpCZ0FFWlYwQUtsMVpJUmNLcUdEajh4V2dQQVFDd0dQSXQ4Wk9jRGtjclRyMlN2V0NrUWp2M3lQOHlRYytzbzdUVExlL1dEdWExNmFKdXBiR3hsTnF6UE5NNXFRbVN2ZE50bFBkQ21wTW5KdEEzRkZMeWJlbVB5eW5TNGVaYkkzS3NxdU5kVGxwa1drMldzMGs2YlplOSt2Q3VxNkxTMHRHdmxlajVVbzZLdkkvVldlYkZUb0RkcFAwbzd0VGU1bmtjSHJ4MjRmMjdXeGpqZjdYL3NseWphUHFPT3FPeVo1TGxwd0src1ZFdkR3NEM4RUJHVFdYeVN0MnFDRldXWnA0dUZVaUljRWJMSCtvUVF3QkZ3SUFBQT09In0= -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["text"],"name":[1],"type":["chr"],"align":["left"]},{"label":["url"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"link to google.","2":"https://google.ca"},{"1":"Link to Wikipedia","2":"https://www.wikipedia.org/"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[2]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -1929,6 +2009,17 @@ simple_page %&gt;%
 </ol>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVhZF9odG1sKFwiaHR0cHM6Ly93d3cubXVzaXhtYXRjaC5jb20vc2VhcmNoL2thbmUlMjBicm93blwiKSAlPiUgXG5cdGh0bWxfbm9kZXMoJy50aXRsZSBzcGFuJykgJT4lIFxuXHRodG1sX3RleHQoKVxuYGBgIn0= -->
+<pre class="r"><code>read_html(&quot;https://www.musixmatch.com/search/kane%20brown&quot;) %&gt;% 
+    html_nodes('.title span') %&gt;% 
+    html_text()</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiIFsxXSBcIkxvc3QgaW4gdGhlIE1pZGRsZSBvZiBOb3doZXJlXCIgXCJJdCBBaW4ndCBZb3UgSXQncyBNZVwiICAgICAgICAgIFwiR29vZCBhcyBZb3VcIiAgICAgICAgICAgICAgICAgIFxuIFs0XSBcIldoYXQgSWZzXCIgICAgICAgICAgICAgICAgICAgICAgXCJMb3NlIEl0XCIgICAgICAgICAgICAgICAgICAgICAgIFwiSGVhdmVuXCIgICAgICAgICAgICAgICAgICAgICAgIFxuIFs3XSBcIkhvbWVzaWNrXCIgICAgICAgICAgICAgICAgICAgICAgXCJXb3JrXCIgICAgICAgICAgICAgICAgICAgICAgICAgIFwiQ2xvc2VyXCIgICAgICAgICAgICAgICAgICAgICAgIFxuWzEwXSBcIkV4Y3VzZXNcIiAgICAgICAgICAgICAgICAgICAgICBcbiJ9 -->
+<pre><code> [1] &quot;Lost in the Middle of Nowhere&quot; &quot;It Ain't You It's Me&quot;          &quot;Good as You&quot;                  
+ [4] &quot;What Ifs&quot;                      &quot;Lose It&quot;                       &quot;Heaven&quot;                       
+ [7] &quot;Homesick&quot;                      &quot;Work&quot;                          &quot;Closer&quot;                       
+[10] &quot;Excuses&quot;                      </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -1937,10 +2028,18 @@ simple_page %&gt;%
 <p>Goal: extract the Wikipedia table of the <a href="https://en.wikipedia.org/wiki/List_of_roller_coaster_rankings#Tallest_steel_roller_coasters">tallest steel roller coasters</a> in the world with <code>html_table()</code>.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVhZF9odG1sKFwiaHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTGlzdF9vZl9yb2xsZXJfY29hc3Rlcl9yYW5raW5nc1wiKSAlPiUgXG5cdEZJTExfVEhJU19JTlxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVhZF9odG1sKFwiaHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTGlzdF9vZl9yb2xsZXJfY29hc3Rlcl9yYW5raW5nc1wiKSAlPiUgXG5cdGh0bWxfdGFibGUoZmlsbD1UUlVFKSAlPiUgXG5cdC5bWzJdXVxuYGBgIn0= -->
 <pre class="r"><code>read_html(&quot;https://en.wikipedia.org/wiki/List_of_roller_coaster_rankings&quot;) %&gt;% 
-    FILL_THIS_IN</code></pre>
+    html_table(fill=TRUE) %&gt;% 
+    .[[2]]</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6NywibnJvdyI6MTB9LCJyZGYiOiJINHNJQUFBQUFBQUFBNlZWM1U0YVFSUmVVRVJRcXkwMmJlM04zUFR2d2kyd0lxVjNWbXI5d3hpaHFVblRpK1B1QUJOM1o4anNyTXFkNzlBWDhGbDhsRDZJN1ZtWUFaYVlKcllrdzg1KzV6dG52ek56NXN4Si9iU2NQODFibHBXMlpqSXBLejJEMDlrMC9xV3NXU3NYUDY4c2E2YUFreXlPSlJ6NWdURjJRRVBNeHBIQk1hYzU4emh5bXJjeWVBNEQ1UTRZNzNoQURrQURoWmJva1ZaWE10OG5kUW1kVUZHcFRhK2FVWS9LQVBoSDhqbDBvVWRKVzRxQUhNaCtUd24rblF0RlNlbUhKcSsxeENXVlJMUkppMG9wSk5uYm0yTGtUcWhIZG9SMHFRYm1keUxaSjA2NW90OGZOeFdsUXhXQ2szS3hXTlNHbFFhcW81eXpLRWdFeUIzU0N3YXFDMXdEeTN0Y3NZQjVvRkNBVTZ4TUpmK2l5YTdJam85SmtpK1NnaUpiM2dYbEtwSW00TUkyOVVDU1k4RzQwdER6c1U4RE9zd2xEUkZ4QmN4OE1sL0hTTUdsa0w2bmtjVWRYQUNRakJ3Q04xaHVHNlM0Wk53TE5mRGtDRG9RZGxrQXBObURTZW85R2dyYndNR0ROeUg1SnJoSHBUOW1QNHIzTXlSMUVURE9CSjlLZU9rclp3cFh2YWxBMGZEQllHNHJDcFVFbjVsaXlhRFdVZWIzdW1UMm9RZC9aY3dOazdtZll1UmIxNE45MzZoczN0NjBGWGxiY21xM044RzdFVjR1R3J5WXdFc1ZqWmMzSjNHbld0VjRUQmpocTg1bTFkNHdsckk5R1dzWjYzSm9xVTErdXVDVVB0aU9ObFNuUEVwYVZXMGpBUmQxRWpVbkNWZVNjR0xuc2xqSkVJelcrbjllVno4SjMyY2RQSnl2c1lUUDhDaUJOT1d6VnJmSnJvMDFMVHZBMGNxak5yaDRJTENvSGg1c1JFM3U0bW9EK3ZGcHJwQmYxei9Kc2FRaG5qbHRlNnB0enNCbWlOcjRyQUhTN1pKU3JWYWRORHZhL0hJZjVRSjJrQW1DNFd0Rk0wZnZ0LzUxbW16QUdRN0JxRDZ6R3B3OUFYNXU1a2RJTVBOamtBYlBic2Y5UXZaTjllOVMxdW1hZzcwNFh2RlIxMTA0b2E2UUh1bFM3Q2hKRVRuc0liWVJFdDhDNld0cjhNdFBxM1Y5Q0kxYUErYXhMWUxkbHJGT3k3cWJjc21LbnNJR2drN3BncjVMSnAxVGNncFlqbmlzeEZ0M3V4RS9YOSsweG5lU3BkV2xOR2JtMmVFbjA3OTFxSXhaRThvN2pKdkZ5L2h3Um4zVDNqRGpRY0oyVDQ3N1lSN1IwRlpDZ2VIbFhlRWJaSkNiZGZjSFBsS1FwbFVIQUFBPSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["Rank"],"name":[1],"type":["int"],"align":["right"]},{"label":["Name"],"name":[2],"type":["chr"],"align":["left"]},{"label":["Park"],"name":[3],"type":["chr"],"align":["left"]},{"label":["Country"],"name":[4],"type":["chr"],"align":["left"]},{"label":["Height"],"name":[5],"type":["chr"],"align":["left"]},{"label":["Manufacturer"],"name":[6],"type":["chr"],"align":["left"]},{"label":["Record held"],"name":[7],"type":["chr"],"align":["left"]}],"data":[{"1":"1","2":"Kingda Ka","3":"Six Flags Great Adventure","4":"United States","5":"456 ft (139 m)","6":"Intamin","7":"May 2005 – Present"},{"1":"2","2":"Top Thrill Dragster","3":"Cedar Point","4":"United States","5":"420 ft (130 m)","6":"Intamin","7":"May 2003 – May 2005"},{"1":"3","2":"Superman: Escape from Krypton[note 1]","3":"Six Flags Magic Mountain","4":"United States","5":"415 ft (126 m)","6":"Intamin","7":"March 1997 – May 2003"},{"1":"4","2":"Tower of Terror II[note 1]","3":"Dreamworld","4":"Australia","5":"377 ft (115 m)","6":"Intamin","7":"January 1997 – March 1997"},{"1":"5","2":"Red Force","3":"Ferrari Land","4":"Spain","5":"367.4 ft (112.0 m)","6":"Intamin","7":"N/A"},{"1":"6","2":"Fury 325","3":"Carowinds","4":"United States","5":"325 ft (99 m)","6":"Bolliger & Mabillard","7":"N/A"},{"1":"7","2":"Steel Dragon 2000","3":"Nagashima Spa Land","4":"Japan","5":"318.3 ft (97.0 m)","6":"D. H. Morgan Manufacturing","7":"N/A"},{"1":"8","2":"Millennium Force","3":"Cedar Point","4":"United States","5":"310 ft (94 m)","6":"Intamin","7":"N/A"},{"1":"9","2":"Leviathan","3":"Canada's Wonderland","4":"Canada","5":"306 ft (93 m)","6":"Bolliger & Mabillard","7":"N/A"},{"1":"10","2":"Intimidator 305","3":"Kings Dominion","4":"United States","5":"305 ft (93 m)","6":"Intamin","7":"N/A"}],"options":{"columns":{"min":{},"max":[10],"total":[7]},"rows":{"min":[10],"max":[10],"total":[10]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -1953,12 +2052,489 @@ simple_page %&gt;%
 </ul>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZnJvbUpTT04oJ3tcImNpdHlcIiA6IFwiWlxcXFx1MDBGQ3JpY2hcIn0nKSAjIEEgbGlzdFxuZnJvbUpTT04oXCJodHRwczovL2FwaS5naXRodWIuY29tL3VzZXJzL2hhZGxleS9vcmdzXCIpICU+JSBcblx0Z2xpbXBzZSgpICMgQSBkYXRhIGZyYW1lXG50b0pTT04obXRjYXJzLCBwcmV0dHk9VFJVRSlcbmBgYCJ9 -->
-<pre class="r"><code>fromJSON('{&quot;city&quot; : &quot;Z\\u00FCrich&quot;}') # A list
-fromJSON(&quot;https://api.github.com/users/hadley/orgs&quot;) %&gt;% 
-    glimpse() # A data frame
-toJSON(mtcars, pretty=TRUE)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShqc29ubGl0ZSlcbmZyb21KU09OKCd7XCJjaXR5XCIgOiBcIlpcXFxcdTAwRkNyaWNoXCJ9JykgIyBBIGxpc3RcbmBgYCJ9 -->
+<pre class="r"><code>library(jsonlite)
+fromJSON('{&quot;city&quot; : &quot;Z\\u00FCrich&quot;}') # A list</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiJGNpdHlcblsxXSBcIlrDvHJpY2hcIlxuIn0= -->
+<pre><code>$city
+[1] &quot;Zürich&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZnJvbUpTT04oXCJodHRwczovL2FwaS5naXRodWIuY29tL3VzZXJzL2hhZGxleS9vcmdzXCIpICU+JSBcblx0Z2xpbXBzZSgpICMgQSBkYXRhIGZyYW1lXG5gYGAifQ== -->
+<pre class="r"><code>fromJSON(&quot;https://api.github.com/users/hadley/orgs&quot;) %&gt;% 
+    glimpse() # A data frame</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiT2JzZXJ2YXRpb25zOiAxMFxuVmFyaWFibGVzOiAxMlxuJCBsb2dpbiAgICAgICAgICAgICAgPGNocj4gXCJnZ29iaVwiLCBcInJzdHVkaW9cIiwgXCJyc3RhdHNcIiwgXCJyb3BlbnNjaVwiLCBcInJqb3VybmFsXCIsIFwici1kYmlcIiwgXCJSQ29uc29ydGkuLi5cbiQgaWQgICAgICAgICAgICAgICAgIDxpbnQ+IDQyMzYzOCwgNTEzNTYwLCA3MjI3MzUsIDEyMDAyNjksIDMzMzA1NjEsIDU2OTU2NjUsIDE1MzY2MTM3LCAyMjAzMjY0NiwgMjIuLi5cbiQgbm9kZV9pZCAgICAgICAgICAgIDxjaHI+IFwiTURFeU9rOXlaMkZ1YVhwaGRHbHZialF5TXpZek9BPT1cIiwgXCJNREV5T2s5eVoyRnVhWHBoZEdsdmJqVXhNelUyTUE9PVwiLCBcIi4uLlxuJCB1cmwgICAgICAgICAgICAgICAgPGNocj4gXCJodHRwczovL2FwaS5naXRodWIuY29tL29yZ3MvZ2dvYmlcIiwgXCJodHRwczovL2FwaS5naXRodWIuY29tL29yZ3MvcnN0dWRpby4uLlxuJCByZXBvc191cmwgICAgICAgICAgPGNocj4gXCJodHRwczovL2FwaS5naXRodWIuY29tL29yZ3MvZ2dvYmkvcmVwb3NcIiwgXCJodHRwczovL2FwaS5naXRodWIuY29tL29yZ3Mvci4uLlxuJCBldmVudHNfdXJsICAgICAgICAgPGNocj4gXCJodHRwczovL2FwaS5naXRodWIuY29tL29yZ3MvZ2dvYmkvZXZlbnRzXCIsIFwiaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9vcmdzLy4uLlxuJCBob29rc191cmwgICAgICAgICAgPGNocj4gXCJodHRwczovL2FwaS5naXRodWIuY29tL29yZ3MvZ2dvYmkvaG9va3NcIiwgXCJodHRwczovL2FwaS5naXRodWIuY29tL29yZ3Mvci4uLlxuJCBpc3N1ZXNfdXJsICAgICAgICAgPGNocj4gXCJodHRwczovL2FwaS5naXRodWIuY29tL29yZ3MvZ2dvYmkvaXNzdWVzXCIsIFwiaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9vcmdzLy4uLlxuJCBtZW1iZXJzX3VybCAgICAgICAgPGNocj4gXCJodHRwczovL2FwaS5naXRodWIuY29tL29yZ3MvZ2dvYmkvbWVtYmVyc3svbWVtYmVyfVwiLCBcImh0dHBzOi8vYXBpLmdpdGh1Yi4uLlxuJCBwdWJsaWNfbWVtYmVyc191cmwgPGNocj4gXCJodHRwczovL2FwaS5naXRodWIuY29tL29yZ3MvZ2dvYmkvcHVibGljX21lbWJlcnN7L21lbWJlcn1cIiwgXCJodHRwczovL2FwaS4uLlxuJCBhdmF0YXJfdXJsICAgICAgICAgPGNocj4gXCJodHRwczovL2F2YXRhcnMxLmdpdGh1YnVzZXJjb250ZW50LmNvbS91LzQyMzYzOD92PTRcIiwgXCJodHRwczovL2F2YXRhcnMxLi4uLlxuJCBkZXNjcmlwdGlvbiAgICAgICAgPGNocj4gXCJcIiwgTkEsIE5BLCBcIlwiLCBOQSwgXCJSICsgZGF0YWJhc2VzXCIsIFwiVGhlIFIgQ29uc29ydGl1bSwgSW5jIHdhcyBlc3RhYmxpc2guLi5cbiJ9 -->
+<pre><code>Observations: 10
+Variables: 12
+$ login              &lt;chr&gt; &quot;ggobi&quot;, &quot;rstudio&quot;, &quot;rstats&quot;, &quot;ropensci&quot;, &quot;rjournal&quot;, &quot;r-dbi&quot;, &quot;RConsorti...
+$ id                 &lt;int&gt; 423638, 513560, 722735, 1200269, 3330561, 5695665, 15366137, 22032646, 22...
+$ node_id            &lt;chr&gt; &quot;MDEyOk9yZ2FuaXphdGlvbjQyMzYzOA==&quot;, &quot;MDEyOk9yZ2FuaXphdGlvbjUxMzU2MA==&quot;, &quot;...
+$ url                &lt;chr&gt; &quot;https://api.github.com/orgs/ggobi&quot;, &quot;https://api.github.com/orgs/rstudio...
+$ repos_url          &lt;chr&gt; &quot;https://api.github.com/orgs/ggobi/repos&quot;, &quot;https://api.github.com/orgs/r...
+$ events_url         &lt;chr&gt; &quot;https://api.github.com/orgs/ggobi/events&quot;, &quot;https://api.github.com/orgs/...
+$ hooks_url          &lt;chr&gt; &quot;https://api.github.com/orgs/ggobi/hooks&quot;, &quot;https://api.github.com/orgs/r...
+$ issues_url         &lt;chr&gt; &quot;https://api.github.com/orgs/ggobi/issues&quot;, &quot;https://api.github.com/orgs/...
+$ members_url        &lt;chr&gt; &quot;https://api.github.com/orgs/ggobi/members{/member}&quot;, &quot;https://api.github...
+$ public_members_url &lt;chr&gt; &quot;https://api.github.com/orgs/ggobi/public_members{/member}&quot;, &quot;https://api...
+$ avatar_url         &lt;chr&gt; &quot;https://avatars1.githubusercontent.com/u/423638?v=4&quot;, &quot;https://avatars1....
+$ description        &lt;chr&gt; &quot;&quot;, NA, NA, &quot;&quot;, NA, &quot;R + databases&quot;, &quot;The R Consortium, Inc was establish...</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudG9KU09OKG10Y2FycywgcHJldHR5PVRSVUUpXG5gYGAifQ== -->
+<pre class="r"><code>toJSON(mtcars, pretty=TRUE)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiW1xuICB7XG4gICAgXCJtcGdcIjogMjEsXG4gICAgXCJjeWxcIjogNixcbiAgICBcImRpc3BcIjogMTYwLFxuICAgIFwiaHBcIjogMTEwLFxuICAgIFwiZHJhdFwiOiAzLjksXG4gICAgXCJ3dFwiOiAyLjYyLFxuICAgIFwicXNlY1wiOiAxNi40NixcbiAgICBcInZzXCI6IDAsXG4gICAgXCJhbVwiOiAxLFxuICAgIFwiZ2VhclwiOiA0LFxuICAgIFwiY2FyYlwiOiA0LFxuICAgIFwiX3Jvd1wiOiBcIk1hemRhIFJYNFwiXG4gIH0sXG4gIHtcbiAgICBcIm1wZ1wiOiAyMSxcbiAgICBcImN5bFwiOiA2LFxuICAgIFwiZGlzcFwiOiAxNjAsXG4gICAgXCJocFwiOiAxMTAsXG4gICAgXCJkcmF0XCI6IDMuOSxcbiAgICBcInd0XCI6IDIuODc1LFxuICAgIFwicXNlY1wiOiAxNy4wMixcbiAgICBcInZzXCI6IDAsXG4gICAgXCJhbVwiOiAxLFxuICAgIFwiZ2VhclwiOiA0LFxuICAgIFwiY2FyYlwiOiA0LFxuICAgIFwiX3Jvd1wiOiBcIk1hemRhIFJYNCBXYWdcIlxuICB9LFxuICB7XG4gICAgXCJtcGdcIjogMjIuOCxcbiAgICBcImN5bFwiOiA0LFxuICAgIFwiZGlzcFwiOiAxMDgsXG4gICAgXCJocFwiOiA5MyxcbiAgICBcImRyYXRcIjogMy44NSxcbiAgICBcInd0XCI6IDIuMzIsXG4gICAgXCJxc2VjXCI6IDE4LjYxLFxuICAgIFwidnNcIjogMSxcbiAgICBcImFtXCI6IDEsXG4gICAgXCJnZWFyXCI6IDQsXG4gICAgXCJjYXJiXCI6IDEsXG4gICAgXCJfcm93XCI6IFwiRGF0c3VuIDcxMFwiXG4gIH0sXG4gIHtcbiAgICBcIm1wZ1wiOiAyMS40LFxuICAgIFwiY3lsXCI6IDYsXG4gICAgXCJkaXNwXCI6IDI1OCxcbiAgICBcImhwXCI6IDExMCxcbiAgICBcImRyYXRcIjogMy4wOCxcbiAgICBcInd0XCI6IDMuMjE1LFxuICAgIFwicXNlY1wiOiAxOS40NCxcbiAgICBcInZzXCI6IDEsXG4gICAgXCJhbVwiOiAwLFxuICAgIFwiZ2VhclwiOiAzLFxuICAgIFwiY2FyYlwiOiAxLFxuICAgIFwiX3Jvd1wiOiBcIkhvcm5ldCA0IERyaXZlXCJcbiAgfSxcbiAge1xuICAgIFwibXBnXCI6IDE4LjcsXG4gICAgXCJjeWxcIjogOCxcbiAgICBcImRpc3BcIjogMzYwLFxuICAgIFwiaHBcIjogMTc1LFxuICAgIFwiZHJhdFwiOiAzLjE1LFxuICAgIFwid3RcIjogMy40NCxcbiAgICBcInFzZWNcIjogMTcuMDIsXG4gICAgXCJ2c1wiOiAwLFxuICAgIFwiYW1cIjogMCxcbiAgICBcImdlYXJcIjogMyxcbiAgICBcImNhcmJcIjogMixcbiAgICBcIl9yb3dcIjogXCJIb3JuZXQgU3BvcnRhYm91dFwiXG4gIH0sXG4gIHtcbiAgICBcIm1wZ1wiOiAxOC4xLFxuICAgIFwiY3lsXCI6IDYsXG4gICAgXCJkaXNwXCI6IDIyNSxcbiAgICBcImhwXCI6IDEwNSxcbiAgICBcImRyYXRcIjogMi43NixcbiAgICBcInd0XCI6IDMuNDYsXG4gICAgXCJxc2VjXCI6IDIwLjIyLFxuICAgIFwidnNcIjogMSxcbiAgICBcImFtXCI6IDAsXG4gICAgXCJnZWFyXCI6IDMsXG4gICAgXCJjYXJiXCI6IDEsXG4gICAgXCJfcm93XCI6IFwiVmFsaWFudFwiXG4gIH0sXG4gIHtcbiAgICBcIm1wZ1wiOiAxNC4zLFxuICAgIFwiY3lsXCI6IDgsXG4gICAgXCJkaXNwXCI6IDM2MCxcbiAgICBcImhwXCI6IDI0NSxcbiAgICBcImRyYXRcIjogMy4yMSxcbiAgICBcInd0XCI6IDMuNTcsXG4gICAgXCJxc2VjXCI6IDE1Ljg0LFxuICAgIFwidnNcIjogMCxcbiAgICBcImFtXCI6IDAsXG4gICAgXCJnZWFyXCI6IDMsXG4gICAgXCJjYXJiXCI6IDQsXG4gICAgXCJfcm93XCI6IFwiRHVzdGVyIDM2MFwiXG4gIH0sXG4gIHtcbiAgICBcIm1wZ1wiOiAyNC40LFxuICAgIFwiY3lsXCI6IDQsXG4gICAgXCJkaXNwXCI6IDE0Ni43LFxuICAgIFwiaHBcIjogNjIsXG4gICAgXCJkcmF0XCI6IDMuNjksXG4gICAgXCJ3dFwiOiAzLjE5LFxuICAgIFwicXNlY1wiOiAyMCxcbiAgICBcInZzXCI6IDEsXG4gICAgXCJhbVwiOiAwLFxuICAgIFwiZ2VhclwiOiA0LFxuICAgIFwiY2FyYlwiOiAyLFxuICAgIFwiX3Jvd1wiOiBcIk1lcmMgMjQwRFwiXG4gIH0sXG4gIHtcbiAgICBcIm1wZ1wiOiAyMi44LFxuICAgIFwiY3lsXCI6IDQsXG4gICAgXCJkaXNwXCI6IDE0MC44LFxuICAgIFwiaHBcIjogOTUsXG4gICAgXCJkcmF0XCI6IDMuOTIsXG4gICAgXCJ3dFwiOiAzLjE1LFxuICAgIFwicXNlY1wiOiAyMi45LFxuICAgIFwidnNcIjogMSxcbiAgICBcImFtXCI6IDAsXG4gICAgXCJnZWFyXCI6IDQsXG4gICAgXCJjYXJiXCI6IDIsXG4gICAgXCJfcm93XCI6IFwiTWVyYyAyMzBcIlxuICB9LFxuICB7XG4gICAgXCJtcGdcIjogMTkuMixcbiAgICBcImN5bFwiOiA2LFxuICAgIFwiZGlzcFwiOiAxNjcuNixcbiAgICBcImhwXCI6IDEyMyxcbiAgICBcImRyYXRcIjogMy45MixcbiAgICBcInd0XCI6IDMuNDQsXG4gICAgXCJxc2VjXCI6IDE4LjMsXG4gICAgXCJ2c1wiOiAxLFxuICAgIFwiYW1cIjogMCxcbiAgICBcImdlYXJcIjogNCxcbiAgICBcImNhcmJcIjogNCxcbiAgICBcIl9yb3dcIjogXCJNZXJjIDI4MFwiXG4gIH0sXG4gIHtcbiAgICBcIm1wZ1wiOiAxNy44LFxuICAgIFwiY3lsXCI6IDYsXG4gICAgXCJkaXNwXCI6IDE2Ny42LFxuICAgIFwiaHBcIjogMTIzLFxuICAgIFwiZHJhdFwiOiAzLjkyLFxuICAgIFwid3RcIjogMy40NCxcbiAgICBcInFzZWNcIjogMTguOSxcbiAgICBcInZzXCI6IDEsXG4gICAgXCJhbVwiOiAwLFxuICAgIFwiZ2VhclwiOiA0LFxuICAgIFwiY2FyYlwiOiA0LFxuICAgIFwiX3Jvd1wiOiBcIk1lcmMgMjgwQ1wiXG4gIH0sXG4gIHtcbiAgICBcIm1wZ1wiOiAxNi40LFxuICAgIFwiY3lsXCI6IDgsXG4gICAgXCJkaXNwXCI6IDI3NS44LFxuICAgIFwiaHBcIjogMTgwLFxuICAgIFwiZHJhdFwiOiAzLjA3LFxuICAgIFwid3RcIjogNC4wNyxcbiAgICBcInFzZWNcIjogMTcuNCxcbiAgICBcInZzXCI6IDAsXG4gICAgXCJhbVwiOiAwLFxuICAgIFwiZ2VhclwiOiAzLFxuICAgIFwiY2FyYlwiOiAzLFxuICAgIFwiX3Jvd1wiOiBcIk1lcmMgNDUwU0VcIlxuICB9LFxuICB7XG4gICAgXCJtcGdcIjogMTcuMyxcbiAgICBcImN5bFwiOiA4LFxuICAgIFwiZGlzcFwiOiAyNzUuOCxcbiAgICBcImhwXCI6IDE4MCxcbiAgICBcImRyYXRcIjogMy4wNyxcbiAgICBcInd0XCI6IDMuNzMsXG4gICAgXCJxc2VjXCI6IDE3LjYsXG4gICAgXCJ2c1wiOiAwLFxuICAgIFwiYW1cIjogMCxcbiAgICBcImdlYXJcIjogMyxcbiAgICBcImNhcmJcIjogMyxcbiAgICBcIl9yb3dcIjogXCJNZXJjIDQ1MFNMXCJcbiAgfSxcbiAge1xuICAgIFwibXBnXCI6IDE1LjIsXG4gICAgXCJjeWxcIjogOCxcbiAgICBcImRpc3BcIjogMjc1LjgsXG4gICAgXCJocFwiOiAxODAsXG4gICAgXCJkcmF0XCI6IDMuMDcsXG4gICAgXCJ3dFwiOiAzLjc4LFxuICAgIFwicXNlY1wiOiAxOCxcbiAgICBcInZzXCI6IDAsXG4gICAgXCJhbVwiOiAwLFxuICAgIFwiZ2VhclwiOiAzLFxuICAgIFwiY2FyYlwiOiAzLFxuICAgIFwiX3Jvd1wiOiBcIk1lcmMgNDUwU0xDXCJcbiAgfSxcbiAge1xuICAgIFwibXBnXCI6IDEwLjQsXG4gICAgXCJjeWxcIjogOCxcbiAgICBcImRpc3BcIjogNDcyLFxuICAgIFwiaHBcIjogMjA1LFxuICAgIFwiZHJhdFwiOiAyLjkzLFxuICAgIFwid3RcIjogNS4yNSxcbiAgICBcInFzZWNcIjogMTcuOTgsXG4gICAgXCJ2c1wiOiAwLFxuICAgIFwiYW1cIjogMCxcbiAgICBcImdlYXJcIjogMyxcbiAgICBcImNhcmJcIjogNCxcbiAgICBcIl9yb3dcIjogXCJDYWRpbGxhYyBGbGVldHdvb2RcIlxuICB9LFxuICB7XG4gICAgXCJtcGdcIjogMTAuNCxcbiAgICBcImN5bFwiOiA4LFxuICAgIFwiZGlzcFwiOiA0NjAsXG4gICAgXCJocFwiOiAyMTUsXG4gICAgXCJkcmF0XCI6IDMsXG4gICAgXCJ3dFwiOiA1LjQyNCxcbiAgICBcInFzZWNcIjogMTcuODIsXG4gICAgXCJ2c1wiOiAwLFxuICAgIFwiYW1cIjogMCxcbiAgICBcImdlYXJcIjogMyxcbiAgICBcImNhcmJcIjogNCxcbiAgICBcIl9yb3dcIjogXCJMaW5jb2xuIENvbnRpbmVudGFsXCJcbiAgfSxcbiAge1xuICAgIFwibXBnXCI6IDE0LjcsXG4gICAgXCJjeWxcIjogOCxcbiAgICBcImRpc3BcIjogNDQwLFxuICAgIFwiaHBcIjogMjMwLFxuICAgIFwiZHJhdFwiOiAzLjIzLFxuICAgIFwid3RcIjogNS4zNDUsXG4gICAgXCJxc2VjXCI6IDE3LjQyLFxuICAgIFwidnNcIjogMCxcbiAgICBcImFtXCI6IDAsXG4gICAgXCJnZWFyXCI6IDMsXG4gICAgXCJjYXJiXCI6IDQsXG4gICAgXCJfcm93XCI6IFwiQ2hyeXNsZXIgSW1wZXJpYWxcIlxuICB9LFxuICB7XG4gICAgXCJtcGdcIjogMzIuNCxcbiAgICBcImN5bFwiOiA0LFxuICAgIFwiZGlzcFwiOiA3OC43LFxuICAgIFwiaHBcIjogNjYsXG4gICAgXCJkcmF0XCI6IDQuMDgsXG4gICAgXCJ3dFwiOiAyLjIsXG4gICAgXCJxc2VjXCI6IDE5LjQ3LFxuICAgIFwidnNcIjogMSxcbiAgICBcImFtXCI6IDEsXG4gICAgXCJnZWFyXCI6IDQsXG4gICAgXCJjYXJiXCI6IDEsXG4gICAgXCJfcm93XCI6IFwiRmlhdCAxMjhcIlxuICB9LFxuICB7XG4gICAgXCJtcGdcIjogMzAuNCxcbiAgICBcImN5bFwiOiA0LFxuICAgIFwiZGlzcFwiOiA3NS43LFxuICAgIFwiaHBcIjogNTIsXG4gICAgXCJkcmF0XCI6IDQuOTMsXG4gICAgXCJ3dFwiOiAxLjYxNSxcbiAgICBcInFzZWNcIjogMTguNTIsXG4gICAgXCJ2c1wiOiAxLFxuICAgIFwiYW1cIjogMSxcbiAgICBcImdlYXJcIjogNCxcbiAgICBcImNhcmJcIjogMixcbiAgICBcIl9yb3dcIjogXCJIb25kYSBDaXZpY1wiXG4gIH0sXG4gIHtcbiAgICBcIm1wZ1wiOiAzMy45LFxuICAgIFwiY3lsXCI6IDQsXG4gICAgXCJkaXNwXCI6IDcxLjEsXG4gICAgXCJocFwiOiA2NSxcbiAgICBcImRyYXRcIjogNC4yMixcbiAgICBcInd0XCI6IDEuODM1LFxuICAgIFwicXNlY1wiOiAxOS45LFxuICAgIFwidnNcIjogMSxcbiAgICBcImFtXCI6IDEsXG4gICAgXCJnZWFyXCI6IDQsXG4gICAgXCJjYXJiXCI6IDEsXG4gICAgXCJfcm93XCI6IFwiVG95b3RhIENvcm9sbGFcIlxuICB9LFxuICB7XG4gICAgXCJtcGdcIjogMjEuNSxcbiAgICBcImN5bFwiOiA0LFxuICAgIFwiZGlzcFwiOiAxMjAuMSxcbiAgICBcImhwXCI6IDk3LFxuICAgIFwiZHJhdFwiOiAzLjcsXG4gICAgXCJ3dFwiOiAyLjQ2NSxcbiAgICBcInFzZWNcIjogMjAuMDEsXG4gICAgXCJ2c1wiOiAxLFxuICAgIFwiYW1cIjogMCxcbiAgICBcImdlYXJcIjogMyxcbiAgICBcImNhcmJcIjogMSxcbiAgICBcIl9yb3dcIjogXCJUb3lvdGEgQ29yb25hXCJcbiAgfSxcbiAge1xuICAgIFwibXBnXCI6IDE1LjUsXG4gICAgXCJjeWxcIjogOCxcbiAgICBcImRpc3BcIjogMzE4LFxuICAgIFwiaHBcIjogMTUwLFxuICAgIFwiZHJhdFwiOiAyLjc2LFxuICAgIFwid3RcIjogMy41MixcbiAgICBcInFzZWNcIjogMTYuODcsXG4gICAgXCJ2c1wiOiAwLFxuICAgIFwiYW1cIjogMCxcbiAgICBcImdlYXJcIjogMyxcbiAgICBcImNhcmJcIjogMixcbiAgICBcIl9yb3dcIjogXCJEb2RnZSBDaGFsbGVuZ2VyXCJcbiAgfSxcbiAge1xuICAgIFwibXBnXCI6IDE1LjIsXG4gICAgXCJjeWxcIjogOCxcbiAgICBcImRpc3BcIjogMzA0LFxuICAgIFwiaHBcIjogMTUwLFxuICAgIFwiZHJhdFwiOiAzLjE1LFxuICAgIFwid3RcIjogMy40MzUsXG4gICAgXCJxc2VjXCI6IDE3LjMsXG4gICAgXCJ2c1wiOiAwLFxuICAgIFwiYW1cIjogMCxcbiAgICBcImdlYXJcIjogMyxcbiAgICBcImNhcmJcIjogMixcbiAgICBcIl9yb3dcIjogXCJBTUMgSmF2ZWxpblwiXG4gIH0sXG4gIHtcbiAgICBcIm1wZ1wiOiAxMy4zLFxuICAgIFwiY3lsXCI6IDgsXG4gICAgXCJkaXNwXCI6IDM1MCxcbiAgICBcImhwXCI6IDI0NSxcbiAgICBcImRyYXRcIjogMy43MyxcbiAgICBcInd0XCI6IDMuODQsXG4gICAgXCJxc2VjXCI6IDE1LjQxLFxuICAgIFwidnNcIjogMCxcbiAgICBcImFtXCI6IDAsXG4gICAgXCJnZWFyXCI6IDMsXG4gICAgXCJjYXJiXCI6IDQsXG4gICAgXCJfcm93XCI6IFwiQ2FtYXJvIFoyOFwiXG4gIH0sXG4gIHtcbiAgICBcIm1wZ1wiOiAxOS4yLFxuICAgIFwiY3lsXCI6IDgsXG4gICAgXCJkaXNwXCI6IDQwMCxcbiAgICBcImhwXCI6IDE3NSxcbiAgICBcImRyYXRcIjogMy4wOCxcbiAgICBcInd0XCI6IDMuODQ1LFxuICAgIFwicXNlY1wiOiAxNy4wNSxcbiAgICBcInZzXCI6IDAsXG4gICAgXCJhbVwiOiAwLFxuICAgIFwiZ2VhclwiOiAzLFxuICAgIFwiY2FyYlwiOiAyLFxuICAgIFwiX3Jvd1wiOiBcIlBvbnRpYWMgRmlyZWJpcmRcIlxuICB9LFxuICB7XG4gICAgXCJtcGdcIjogMjcuMyxcbiAgICBcImN5bFwiOiA0LFxuICAgIFwiZGlzcFwiOiA3OSxcbiAgICBcImhwXCI6IDY2LFxuICAgIFwiZHJhdFwiOiA0LjA4LFxuICAgIFwid3RcIjogMS45MzUsXG4gICAgXCJxc2VjXCI6IDE4LjksXG4gICAgXCJ2c1wiOiAxLFxuICAgIFwiYW1cIjogMSxcbiAgICBcImdlYXJcIjogNCxcbiAgICBcImNhcmJcIjogMSxcbiAgICBcIl9yb3dcIjogXCJGaWF0IFgxLTlcIlxuICB9LFxuICB7XG4gICAgXCJtcGdcIjogMjYsXG4gICAgXCJjeWxcIjogNCxcbiAgICBcImRpc3BcIjogMTIwLjMsXG4gICAgXCJocFwiOiA5MSxcbiAgICBcImRyYXRcIjogNC40MyxcbiAgICBcInd0XCI6IDIuMTQsXG4gICAgXCJxc2VjXCI6IDE2LjcsXG4gICAgXCJ2c1wiOiAwLFxuICAgIFwiYW1cIjogMSxcbiAgICBcImdlYXJcIjogNSxcbiAgICBcImNhcmJcIjogMixcbiAgICBcIl9yb3dcIjogXCJQb3JzY2hlIDkxNC0yXCJcbiAgfSxcbiAge1xuICAgIFwibXBnXCI6IDMwLjQsXG4gICAgXCJjeWxcIjogNCxcbiAgICBcImRpc3BcIjogOTUuMSxcbiAgICBcImhwXCI6IDExMyxcbiAgICBcImRyYXRcIjogMy43NyxcbiAgICBcInd0XCI6IDEuNTEzLFxuICAgIFwicXNlY1wiOiAxNi45LFxuICAgIFwidnNcIjogMSxcbiAgICBcImFtXCI6IDEsXG4gICAgXCJnZWFyXCI6IDUsXG4gICAgXCJjYXJiXCI6IDIsXG4gICAgXCJfcm93XCI6IFwiTG90dXMgRXVyb3BhXCJcbiAgfSxcbiAge1xuICAgIFwibXBnXCI6IDE1LjgsXG4gICAgXCJjeWxcIjogOCxcbiAgICBcImRpc3BcIjogMzUxLFxuICAgIFwiaHBcIjogMjY0LFxuICAgIFwiZHJhdFwiOiA0LjIyLFxuICAgIFwid3RcIjogMy4xNyxcbiAgICBcInFzZWNcIjogMTQuNSxcbiAgICBcInZzXCI6IDAsXG4gICAgXCJhbVwiOiAxLFxuICAgIFwiZ2VhclwiOiA1LFxuICAgIFwiY2FyYlwiOiA0LFxuICAgIFwiX3Jvd1wiOiBcIkZvcmQgUGFudGVyYSBMXCJcbiAgfSxcbiAge1xuICAgIFwibXBnXCI6IDE5LjcsXG4gICAgXCJjeWxcIjogNixcbiAgICBcImRpc3BcIjogMTQ1LFxuICAgIFwiaHBcIjogMTc1LFxuICAgIFwiZHJhdFwiOiAzLjYyLFxuICAgIFwid3RcIjogMi43NyxcbiAgICBcInFzZWNcIjogMTUuNSxcbiAgICBcInZzXCI6IDAsXG4gICAgXCJhbVwiOiAxLFxuICAgIFwiZ2VhclwiOiA1LFxuICAgIFwiY2FyYlwiOiA2LFxuICAgIFwiX3Jvd1wiOiBcIkZlcnJhcmkgRGlub1wiXG4gIH0sXG4gIHtcbiAgICBcIm1wZ1wiOiAxNSxcbiAgICBcImN5bFwiOiA4LFxuICAgIFwiZGlzcFwiOiAzMDEsXG4gICAgXCJocFwiOiAzMzUsXG4gICAgXCJkcmF0XCI6IDMuNTQsXG4gICAgXCJ3dFwiOiAzLjU3LFxuICAgIFwicXNlY1wiOiAxNC42LFxuICAgIFwidnNcIjogMCxcbiAgICBcImFtXCI6IDEsXG4gICAgXCJnZWFyXCI6IDUsXG4gICAgXCJjYXJiXCI6IDgsXG4gICAgXCJfcm93XCI6IFwiTWFzZXJhdGkgQm9yYVwiXG4gIH0sXG4gIHtcbiAgICBcIm1wZ1wiOiAyMS40LFxuICAgIFwiY3lsXCI6IDQsXG4gICAgXCJkaXNwXCI6IDEyMSxcbiAgICBcImhwXCI6IDEwOSxcbiAgICBcImRyYXRcIjogNC4xMSxcbiAgICBcInd0XCI6IDIuNzgsXG4gICAgXCJxc2VjXCI6IDE4LjYsXG4gICAgXCJ2c1wiOiAxLFxuICAgIFwiYW1cIjogMSxcbiAgICBcImdlYXJcIjogNCxcbiAgICBcImNhcmJcIjogMixcbiAgICBcIl9yb3dcIjogXCJWb2x2byAxNDJFXCJcbiAgfVxuXSBcbiJ9 -->
+<pre><code>[
+  {
+    &quot;mpg&quot;: 21,
+    &quot;cyl&quot;: 6,
+    &quot;disp&quot;: 160,
+    &quot;hp&quot;: 110,
+    &quot;drat&quot;: 3.9,
+    &quot;wt&quot;: 2.62,
+    &quot;qsec&quot;: 16.46,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 1,
+    &quot;gear&quot;: 4,
+    &quot;carb&quot;: 4,
+    &quot;_row&quot;: &quot;Mazda RX4&quot;
+  },
+  {
+    &quot;mpg&quot;: 21,
+    &quot;cyl&quot;: 6,
+    &quot;disp&quot;: 160,
+    &quot;hp&quot;: 110,
+    &quot;drat&quot;: 3.9,
+    &quot;wt&quot;: 2.875,
+    &quot;qsec&quot;: 17.02,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 1,
+    &quot;gear&quot;: 4,
+    &quot;carb&quot;: 4,
+    &quot;_row&quot;: &quot;Mazda RX4 Wag&quot;
+  },
+  {
+    &quot;mpg&quot;: 22.8,
+    &quot;cyl&quot;: 4,
+    &quot;disp&quot;: 108,
+    &quot;hp&quot;: 93,
+    &quot;drat&quot;: 3.85,
+    &quot;wt&quot;: 2.32,
+    &quot;qsec&quot;: 18.61,
+    &quot;vs&quot;: 1,
+    &quot;am&quot;: 1,
+    &quot;gear&quot;: 4,
+    &quot;carb&quot;: 1,
+    &quot;_row&quot;: &quot;Datsun 710&quot;
+  },
+  {
+    &quot;mpg&quot;: 21.4,
+    &quot;cyl&quot;: 6,
+    &quot;disp&quot;: 258,
+    &quot;hp&quot;: 110,
+    &quot;drat&quot;: 3.08,
+    &quot;wt&quot;: 3.215,
+    &quot;qsec&quot;: 19.44,
+    &quot;vs&quot;: 1,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 3,
+    &quot;carb&quot;: 1,
+    &quot;_row&quot;: &quot;Hornet 4 Drive&quot;
+  },
+  {
+    &quot;mpg&quot;: 18.7,
+    &quot;cyl&quot;: 8,
+    &quot;disp&quot;: 360,
+    &quot;hp&quot;: 175,
+    &quot;drat&quot;: 3.15,
+    &quot;wt&quot;: 3.44,
+    &quot;qsec&quot;: 17.02,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 3,
+    &quot;carb&quot;: 2,
+    &quot;_row&quot;: &quot;Hornet Sportabout&quot;
+  },
+  {
+    &quot;mpg&quot;: 18.1,
+    &quot;cyl&quot;: 6,
+    &quot;disp&quot;: 225,
+    &quot;hp&quot;: 105,
+    &quot;drat&quot;: 2.76,
+    &quot;wt&quot;: 3.46,
+    &quot;qsec&quot;: 20.22,
+    &quot;vs&quot;: 1,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 3,
+    &quot;carb&quot;: 1,
+    &quot;_row&quot;: &quot;Valiant&quot;
+  },
+  {
+    &quot;mpg&quot;: 14.3,
+    &quot;cyl&quot;: 8,
+    &quot;disp&quot;: 360,
+    &quot;hp&quot;: 245,
+    &quot;drat&quot;: 3.21,
+    &quot;wt&quot;: 3.57,
+    &quot;qsec&quot;: 15.84,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 3,
+    &quot;carb&quot;: 4,
+    &quot;_row&quot;: &quot;Duster 360&quot;
+  },
+  {
+    &quot;mpg&quot;: 24.4,
+    &quot;cyl&quot;: 4,
+    &quot;disp&quot;: 146.7,
+    &quot;hp&quot;: 62,
+    &quot;drat&quot;: 3.69,
+    &quot;wt&quot;: 3.19,
+    &quot;qsec&quot;: 20,
+    &quot;vs&quot;: 1,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 4,
+    &quot;carb&quot;: 2,
+    &quot;_row&quot;: &quot;Merc 240D&quot;
+  },
+  {
+    &quot;mpg&quot;: 22.8,
+    &quot;cyl&quot;: 4,
+    &quot;disp&quot;: 140.8,
+    &quot;hp&quot;: 95,
+    &quot;drat&quot;: 3.92,
+    &quot;wt&quot;: 3.15,
+    &quot;qsec&quot;: 22.9,
+    &quot;vs&quot;: 1,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 4,
+    &quot;carb&quot;: 2,
+    &quot;_row&quot;: &quot;Merc 230&quot;
+  },
+  {
+    &quot;mpg&quot;: 19.2,
+    &quot;cyl&quot;: 6,
+    &quot;disp&quot;: 167.6,
+    &quot;hp&quot;: 123,
+    &quot;drat&quot;: 3.92,
+    &quot;wt&quot;: 3.44,
+    &quot;qsec&quot;: 18.3,
+    &quot;vs&quot;: 1,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 4,
+    &quot;carb&quot;: 4,
+    &quot;_row&quot;: &quot;Merc 280&quot;
+  },
+  {
+    &quot;mpg&quot;: 17.8,
+    &quot;cyl&quot;: 6,
+    &quot;disp&quot;: 167.6,
+    &quot;hp&quot;: 123,
+    &quot;drat&quot;: 3.92,
+    &quot;wt&quot;: 3.44,
+    &quot;qsec&quot;: 18.9,
+    &quot;vs&quot;: 1,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 4,
+    &quot;carb&quot;: 4,
+    &quot;_row&quot;: &quot;Merc 280C&quot;
+  },
+  {
+    &quot;mpg&quot;: 16.4,
+    &quot;cyl&quot;: 8,
+    &quot;disp&quot;: 275.8,
+    &quot;hp&quot;: 180,
+    &quot;drat&quot;: 3.07,
+    &quot;wt&quot;: 4.07,
+    &quot;qsec&quot;: 17.4,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 3,
+    &quot;carb&quot;: 3,
+    &quot;_row&quot;: &quot;Merc 450SE&quot;
+  },
+  {
+    &quot;mpg&quot;: 17.3,
+    &quot;cyl&quot;: 8,
+    &quot;disp&quot;: 275.8,
+    &quot;hp&quot;: 180,
+    &quot;drat&quot;: 3.07,
+    &quot;wt&quot;: 3.73,
+    &quot;qsec&quot;: 17.6,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 3,
+    &quot;carb&quot;: 3,
+    &quot;_row&quot;: &quot;Merc 450SL&quot;
+  },
+  {
+    &quot;mpg&quot;: 15.2,
+    &quot;cyl&quot;: 8,
+    &quot;disp&quot;: 275.8,
+    &quot;hp&quot;: 180,
+    &quot;drat&quot;: 3.07,
+    &quot;wt&quot;: 3.78,
+    &quot;qsec&quot;: 18,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 3,
+    &quot;carb&quot;: 3,
+    &quot;_row&quot;: &quot;Merc 450SLC&quot;
+  },
+  {
+    &quot;mpg&quot;: 10.4,
+    &quot;cyl&quot;: 8,
+    &quot;disp&quot;: 472,
+    &quot;hp&quot;: 205,
+    &quot;drat&quot;: 2.93,
+    &quot;wt&quot;: 5.25,
+    &quot;qsec&quot;: 17.98,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 3,
+    &quot;carb&quot;: 4,
+    &quot;_row&quot;: &quot;Cadillac Fleetwood&quot;
+  },
+  {
+    &quot;mpg&quot;: 10.4,
+    &quot;cyl&quot;: 8,
+    &quot;disp&quot;: 460,
+    &quot;hp&quot;: 215,
+    &quot;drat&quot;: 3,
+    &quot;wt&quot;: 5.424,
+    &quot;qsec&quot;: 17.82,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 3,
+    &quot;carb&quot;: 4,
+    &quot;_row&quot;: &quot;Lincoln Continental&quot;
+  },
+  {
+    &quot;mpg&quot;: 14.7,
+    &quot;cyl&quot;: 8,
+    &quot;disp&quot;: 440,
+    &quot;hp&quot;: 230,
+    &quot;drat&quot;: 3.23,
+    &quot;wt&quot;: 5.345,
+    &quot;qsec&quot;: 17.42,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 3,
+    &quot;carb&quot;: 4,
+    &quot;_row&quot;: &quot;Chrysler Imperial&quot;
+  },
+  {
+    &quot;mpg&quot;: 32.4,
+    &quot;cyl&quot;: 4,
+    &quot;disp&quot;: 78.7,
+    &quot;hp&quot;: 66,
+    &quot;drat&quot;: 4.08,
+    &quot;wt&quot;: 2.2,
+    &quot;qsec&quot;: 19.47,
+    &quot;vs&quot;: 1,
+    &quot;am&quot;: 1,
+    &quot;gear&quot;: 4,
+    &quot;carb&quot;: 1,
+    &quot;_row&quot;: &quot;Fiat 128&quot;
+  },
+  {
+    &quot;mpg&quot;: 30.4,
+    &quot;cyl&quot;: 4,
+    &quot;disp&quot;: 75.7,
+    &quot;hp&quot;: 52,
+    &quot;drat&quot;: 4.93,
+    &quot;wt&quot;: 1.615,
+    &quot;qsec&quot;: 18.52,
+    &quot;vs&quot;: 1,
+    &quot;am&quot;: 1,
+    &quot;gear&quot;: 4,
+    &quot;carb&quot;: 2,
+    &quot;_row&quot;: &quot;Honda Civic&quot;
+  },
+  {
+    &quot;mpg&quot;: 33.9,
+    &quot;cyl&quot;: 4,
+    &quot;disp&quot;: 71.1,
+    &quot;hp&quot;: 65,
+    &quot;drat&quot;: 4.22,
+    &quot;wt&quot;: 1.835,
+    &quot;qsec&quot;: 19.9,
+    &quot;vs&quot;: 1,
+    &quot;am&quot;: 1,
+    &quot;gear&quot;: 4,
+    &quot;carb&quot;: 1,
+    &quot;_row&quot;: &quot;Toyota Corolla&quot;
+  },
+  {
+    &quot;mpg&quot;: 21.5,
+    &quot;cyl&quot;: 4,
+    &quot;disp&quot;: 120.1,
+    &quot;hp&quot;: 97,
+    &quot;drat&quot;: 3.7,
+    &quot;wt&quot;: 2.465,
+    &quot;qsec&quot;: 20.01,
+    &quot;vs&quot;: 1,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 3,
+    &quot;carb&quot;: 1,
+    &quot;_row&quot;: &quot;Toyota Corona&quot;
+  },
+  {
+    &quot;mpg&quot;: 15.5,
+    &quot;cyl&quot;: 8,
+    &quot;disp&quot;: 318,
+    &quot;hp&quot;: 150,
+    &quot;drat&quot;: 2.76,
+    &quot;wt&quot;: 3.52,
+    &quot;qsec&quot;: 16.87,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 3,
+    &quot;carb&quot;: 2,
+    &quot;_row&quot;: &quot;Dodge Challenger&quot;
+  },
+  {
+    &quot;mpg&quot;: 15.2,
+    &quot;cyl&quot;: 8,
+    &quot;disp&quot;: 304,
+    &quot;hp&quot;: 150,
+    &quot;drat&quot;: 3.15,
+    &quot;wt&quot;: 3.435,
+    &quot;qsec&quot;: 17.3,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 3,
+    &quot;carb&quot;: 2,
+    &quot;_row&quot;: &quot;AMC Javelin&quot;
+  },
+  {
+    &quot;mpg&quot;: 13.3,
+    &quot;cyl&quot;: 8,
+    &quot;disp&quot;: 350,
+    &quot;hp&quot;: 245,
+    &quot;drat&quot;: 3.73,
+    &quot;wt&quot;: 3.84,
+    &quot;qsec&quot;: 15.41,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 3,
+    &quot;carb&quot;: 4,
+    &quot;_row&quot;: &quot;Camaro Z28&quot;
+  },
+  {
+    &quot;mpg&quot;: 19.2,
+    &quot;cyl&quot;: 8,
+    &quot;disp&quot;: 400,
+    &quot;hp&quot;: 175,
+    &quot;drat&quot;: 3.08,
+    &quot;wt&quot;: 3.845,
+    &quot;qsec&quot;: 17.05,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 0,
+    &quot;gear&quot;: 3,
+    &quot;carb&quot;: 2,
+    &quot;_row&quot;: &quot;Pontiac Firebird&quot;
+  },
+  {
+    &quot;mpg&quot;: 27.3,
+    &quot;cyl&quot;: 4,
+    &quot;disp&quot;: 79,
+    &quot;hp&quot;: 66,
+    &quot;drat&quot;: 4.08,
+    &quot;wt&quot;: 1.935,
+    &quot;qsec&quot;: 18.9,
+    &quot;vs&quot;: 1,
+    &quot;am&quot;: 1,
+    &quot;gear&quot;: 4,
+    &quot;carb&quot;: 1,
+    &quot;_row&quot;: &quot;Fiat X1-9&quot;
+  },
+  {
+    &quot;mpg&quot;: 26,
+    &quot;cyl&quot;: 4,
+    &quot;disp&quot;: 120.3,
+    &quot;hp&quot;: 91,
+    &quot;drat&quot;: 4.43,
+    &quot;wt&quot;: 2.14,
+    &quot;qsec&quot;: 16.7,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 1,
+    &quot;gear&quot;: 5,
+    &quot;carb&quot;: 2,
+    &quot;_row&quot;: &quot;Porsche 914-2&quot;
+  },
+  {
+    &quot;mpg&quot;: 30.4,
+    &quot;cyl&quot;: 4,
+    &quot;disp&quot;: 95.1,
+    &quot;hp&quot;: 113,
+    &quot;drat&quot;: 3.77,
+    &quot;wt&quot;: 1.513,
+    &quot;qsec&quot;: 16.9,
+    &quot;vs&quot;: 1,
+    &quot;am&quot;: 1,
+    &quot;gear&quot;: 5,
+    &quot;carb&quot;: 2,
+    &quot;_row&quot;: &quot;Lotus Europa&quot;
+  },
+  {
+    &quot;mpg&quot;: 15.8,
+    &quot;cyl&quot;: 8,
+    &quot;disp&quot;: 351,
+    &quot;hp&quot;: 264,
+    &quot;drat&quot;: 4.22,
+    &quot;wt&quot;: 3.17,
+    &quot;qsec&quot;: 14.5,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 1,
+    &quot;gear&quot;: 5,
+    &quot;carb&quot;: 4,
+    &quot;_row&quot;: &quot;Ford Pantera L&quot;
+  },
+  {
+    &quot;mpg&quot;: 19.7,
+    &quot;cyl&quot;: 6,
+    &quot;disp&quot;: 145,
+    &quot;hp&quot;: 175,
+    &quot;drat&quot;: 3.62,
+    &quot;wt&quot;: 2.77,
+    &quot;qsec&quot;: 15.5,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 1,
+    &quot;gear&quot;: 5,
+    &quot;carb&quot;: 6,
+    &quot;_row&quot;: &quot;Ferrari Dino&quot;
+  },
+  {
+    &quot;mpg&quot;: 15,
+    &quot;cyl&quot;: 8,
+    &quot;disp&quot;: 301,
+    &quot;hp&quot;: 335,
+    &quot;drat&quot;: 3.54,
+    &quot;wt&quot;: 3.57,
+    &quot;qsec&quot;: 14.6,
+    &quot;vs&quot;: 0,
+    &quot;am&quot;: 1,
+    &quot;gear&quot;: 5,
+    &quot;carb&quot;: 8,
+    &quot;_row&quot;: &quot;Maserati Bora&quot;
+  },
+  {
+    &quot;mpg&quot;: 21.4,
+    &quot;cyl&quot;: 4,
+    &quot;disp&quot;: 121,
+    &quot;hp&quot;: 109,
+    &quot;drat&quot;: 4.11,
+    &quot;wt&quot;: 2.78,
+    &quot;qsec&quot;: 18.6,
+    &quot;vs&quot;: 1,
+    &quot;am&quot;: 1,
+    &quot;gear&quot;: 4,
+    &quot;carb&quot;: 2,
+    &quot;_row&quot;: &quot;Volvo 142E&quot;
+  }
+] </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <ul>
@@ -1969,10 +2545,121 @@ toJSON(mtcars, pretty=TRUE)</code></pre>
 </ul>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVhZF94bWwoXCJodHRwczovL3d3dy53M3NjaG9vbHMuY29tL3htbC9zaW1wbGUueG1sXCIpICU+JSBcblx0YXNfbGlzdCgpXG5gYGAifQ== -->
-<pre class="r"><code>read_xml(&quot;https://www.w3schools.com/xml/simple.xml&quot;) %&gt;% 
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh4bWwyKVxucmVhZF94bWwoXCJodHRwczovL3d3dy53M3NjaG9vbHMuY29tL3htbC9zaW1wbGUueG1sXCIpICU+JSBcblx0YXNfbGlzdCgpXG5gYGAifQ== -->
+<pre class="r"><code>library(xml2)
+read_xml(&quot;https://www.w3schools.com/xml/simple.xml&quot;) %&gt;% 
     as_list()</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiJGJyZWFrZmFzdF9tZW51XG4kYnJlYWtmYXN0X21lbnUkZm9vZFxuJGJyZWFrZmFzdF9tZW51JGZvb2QkbmFtZVxuJGJyZWFrZmFzdF9tZW51JGZvb2QkbmFtZVtbMV1dXG5bMV0gXCJCZWxnaWFuIFdhZmZsZXNcIlxuXG5cbiRicmVha2Zhc3RfbWVudSRmb29kJHByaWNlXG4kYnJlYWtmYXN0X21lbnUkZm9vZCRwcmljZVtbMV1dXG5bMV0gXCIkNS45NVwiXG5cblxuJGJyZWFrZmFzdF9tZW51JGZvb2QkZGVzY3JpcHRpb25cbiRicmVha2Zhc3RfbWVudSRmb29kJGRlc2NyaXB0aW9uW1sxXV1cblsxXSBcIlR3byBvZiBvdXIgZmFtb3VzIEJlbGdpYW4gV2FmZmxlcyB3aXRoIHBsZW50eSBvZiByZWFsIG1hcGxlIHN5cnVwXCJcblxuXG4kYnJlYWtmYXN0X21lbnUkZm9vZCRjYWxvcmllc1xuJGJyZWFrZmFzdF9tZW51JGZvb2QkY2Fsb3JpZXNbWzFdXVxuWzFdIFwiNjUwXCJcblxuXG5cbiRicmVha2Zhc3RfbWVudSRmb29kXG4kYnJlYWtmYXN0X21lbnUkZm9vZCRuYW1lXG4kYnJlYWtmYXN0X21lbnUkZm9vZCRuYW1lW1sxXV1cblsxXSBcIlN0cmF3YmVycnkgQmVsZ2lhbiBXYWZmbGVzXCJcblxuXG4kYnJlYWtmYXN0X21lbnUkZm9vZCRwcmljZVxuJGJyZWFrZmFzdF9tZW51JGZvb2QkcHJpY2VbWzFdXVxuWzFdIFwiJDcuOTVcIlxuXG5cbiRicmVha2Zhc3RfbWVudSRmb29kJGRlc2NyaXB0aW9uXG4kYnJlYWtmYXN0X21lbnUkZm9vZCRkZXNjcmlwdGlvbltbMV1dXG5bMV0gXCJMaWdodCBCZWxnaWFuIHdhZmZsZXMgY292ZXJlZCB3aXRoIHN0cmF3YmVycmllcyBhbmQgd2hpcHBlZCBjcmVhbVwiXG5cblxuJGJyZWFrZmFzdF9tZW51JGZvb2QkY2Fsb3JpZXNcbiRicmVha2Zhc3RfbWVudSRmb29kJGNhbG9yaWVzW1sxXV1cblsxXSBcIjkwMFwiXG5cblxuXG4kYnJlYWtmYXN0X21lbnUkZm9vZFxuJGJyZWFrZmFzdF9tZW51JGZvb2QkbmFtZVxuJGJyZWFrZmFzdF9tZW51JGZvb2QkbmFtZVtbMV1dXG5bMV0gXCJCZXJyeS1CZXJyeSBCZWxnaWFuIFdhZmZsZXNcIlxuXG5cbiRicmVha2Zhc3RfbWVudSRmb29kJHByaWNlXG4kYnJlYWtmYXN0X21lbnUkZm9vZCRwcmljZVtbMV1dXG5bMV0gXCIkOC45NVwiXG5cblxuJGJyZWFrZmFzdF9tZW51JGZvb2QkZGVzY3JpcHRpb25cbiRicmVha2Zhc3RfbWVudSRmb29kJGRlc2NyaXB0aW9uW1sxXV1cblsxXSBcIkxpZ2h0IEJlbGdpYW4gd2FmZmxlcyBjb3ZlcmVkIHdpdGggYW4gYXNzb3J0bWVudCBvZiBmcmVzaCBiZXJyaWVzIGFuZCB3aGlwcGVkIGNyZWFtXCJcblxuXG4kYnJlYWtmYXN0X21lbnUkZm9vZCRjYWxvcmllc1xuJGJyZWFrZmFzdF9tZW51JGZvb2QkY2Fsb3JpZXNbWzFdXVxuWzFdIFwiOTAwXCJcblxuXG5cbiRicmVha2Zhc3RfbWVudSRmb29kXG4kYnJlYWtmYXN0X21lbnUkZm9vZCRuYW1lXG4kYnJlYWtmYXN0X21lbnUkZm9vZCRuYW1lW1sxXV1cblsxXSBcIkZyZW5jaCBUb2FzdFwiXG5cblxuJGJyZWFrZmFzdF9tZW51JGZvb2QkcHJpY2VcbiRicmVha2Zhc3RfbWVudSRmb29kJHByaWNlW1sxXV1cblsxXSBcIiQ0LjUwXCJcblxuXG4kYnJlYWtmYXN0X21lbnUkZm9vZCRkZXNjcmlwdGlvblxuJGJyZWFrZmFzdF9tZW51JGZvb2QkZGVzY3JpcHRpb25bWzFdXVxuWzFdIFwiVGhpY2sgc2xpY2VzIG1hZGUgZnJvbSBvdXIgaG9tZW1hZGUgc291cmRvdWdoIGJyZWFkXCJcblxuXG4kYnJlYWtmYXN0X21lbnUkZm9vZCRjYWxvcmllc1xuJGJyZWFrZmFzdF9tZW51JGZvb2QkY2Fsb3JpZXNbWzFdXVxuWzFdIFwiNjAwXCJcblxuXG5cbiRicmVha2Zhc3RfbWVudSRmb29kXG4kYnJlYWtmYXN0X21lbnUkZm9vZCRuYW1lXG4kYnJlYWtmYXN0X21lbnUkZm9vZCRuYW1lW1sxXV1cblsxXSBcIkhvbWVzdHlsZSBCcmVha2Zhc3RcIlxuXG5cbiRicmVha2Zhc3RfbWVudSRmb29kJHByaWNlXG4kYnJlYWtmYXN0X21lbnUkZm9vZCRwcmljZVtbMV1dXG5bMV0gXCIkNi45NVwiXG5cblxuJGJyZWFrZmFzdF9tZW51JGZvb2QkZGVzY3JpcHRpb25cbiRicmVha2Zhc3RfbWVudSRmb29kJGRlc2NyaXB0aW9uW1sxXV1cblsxXSBcIlR3byBlZ2dzLCBiYWNvbiBvciBzYXVzYWdlLCB0b2FzdCwgYW5kIG91ciBldmVyLXBvcHVsYXIgaGFzaCBicm93bnNcIlxuXG5cbiRicmVha2Zhc3RfbWVudSRmb29kJGNhbG9yaWVzXG4kYnJlYWtmYXN0X21lbnUkZm9vZCRjYWxvcmllc1tbMV1dXG5bMV0gXCI5NTBcIlxuIn0= -->
+<pre><code>$breakfast_menu
+$breakfast_menu$food
+$breakfast_menu$food$name
+$breakfast_menu$food$name[[1]]
+[1] &quot;Belgian Waffles&quot;
+
+
+$breakfast_menu$food$price
+$breakfast_menu$food$price[[1]]
+[1] &quot;$5.95&quot;
+
+
+$breakfast_menu$food$description
+$breakfast_menu$food$description[[1]]
+[1] &quot;Two of our famous Belgian Waffles with plenty of real maple syrup&quot;
+
+
+$breakfast_menu$food$calories
+$breakfast_menu$food$calories[[1]]
+[1] &quot;650&quot;
+
+
+
+$breakfast_menu$food
+$breakfast_menu$food$name
+$breakfast_menu$food$name[[1]]
+[1] &quot;Strawberry Belgian Waffles&quot;
+
+
+$breakfast_menu$food$price
+$breakfast_menu$food$price[[1]]
+[1] &quot;$7.95&quot;
+
+
+$breakfast_menu$food$description
+$breakfast_menu$food$description[[1]]
+[1] &quot;Light Belgian waffles covered with strawberries and whipped cream&quot;
+
+
+$breakfast_menu$food$calories
+$breakfast_menu$food$calories[[1]]
+[1] &quot;900&quot;
+
+
+
+$breakfast_menu$food
+$breakfast_menu$food$name
+$breakfast_menu$food$name[[1]]
+[1] &quot;Berry-Berry Belgian Waffles&quot;
+
+
+$breakfast_menu$food$price
+$breakfast_menu$food$price[[1]]
+[1] &quot;$8.95&quot;
+
+
+$breakfast_menu$food$description
+$breakfast_menu$food$description[[1]]
+[1] &quot;Light Belgian waffles covered with an assortment of fresh berries and whipped cream&quot;
+
+
+$breakfast_menu$food$calories
+$breakfast_menu$food$calories[[1]]
+[1] &quot;900&quot;
+
+
+
+$breakfast_menu$food
+$breakfast_menu$food$name
+$breakfast_menu$food$name[[1]]
+[1] &quot;French Toast&quot;
+
+
+$breakfast_menu$food$price
+$breakfast_menu$food$price[[1]]
+[1] &quot;$4.50&quot;
+
+
+$breakfast_menu$food$description
+$breakfast_menu$food$description[[1]]
+[1] &quot;Thick slices made from our homemade sourdough bread&quot;
+
+
+$breakfast_menu$food$calories
+$breakfast_menu$food$calories[[1]]
+[1] &quot;600&quot;
+
+
+
+$breakfast_menu$food
+$breakfast_menu$food$name
+$breakfast_menu$food$name[[1]]
+[1] &quot;Homestyle Breakfast&quot;
+
+
+$breakfast_menu$food$price
+$breakfast_menu$food$price[[1]]
+[1] &quot;$6.95&quot;
+
+
+$breakfast_menu$food$description
+$breakfast_menu$food$description[[1]]
+[1] &quot;Two eggs, bacon or sausage, toast, and our ever-popular hash browns&quot;
+
+
+$breakfast_menu$food$calories
+$breakfast_menu$food$calories[[1]]
+[1] &quot;950&quot;</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Others:</p>
@@ -1983,7 +2670,7 @@ toJSON(mtcars, pretty=TRUE)</code></pre>
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiQ2xhc3MgTWVldGluZyAxMTogR2V0dGluZyBEYXRhIGZyb20gdGhlIFdlYiwgUGFydCAxIgpvdXRwdXQ6CiAgICBodG1sX25vdGVib29rOgogICAgICAgIHRvYzogdHJ1ZQogICAgICAgIHRoZW1lOiBjZXJ1bGVhbgogICAgICAgIG51bWJlcl9zZWN0aW9uczogdHJ1ZQplZGl0b3Jfb3B0aW9uczogCiAgY2h1bmtfb3V0cHV0X3R5cGU6IGlubGluZQotLS0KCiMgTW90aXZhdGlvbgoKVG9kYXkncyB0b3BpYzogc2NyYXBpbmcgdGhlIHdlYi4KClRoaXMgbWVhbnMgcmVhZGluZyB3ZWJwYWdlcyBsaWtlIFt0aGlzIHdpa2lwZWRpYSBwYWdlXShodHRwczovL2VuLndpa2lwZWRpYS5vcmcvd2lraS9MaXN0X29mX3JvbGxlcl9jb2FzdGVyX3JhbmtpbmdzKSBhbmQgcHV0dGluZyByZWxldmFudCBpbmZvIGludG8gUi4KCiMgR2V0dGluZyBTdGFydGVkCgoxLiBJbnN0YWxsIFtgcnZlc3RgXShodHRwczovL2dpdGh1Yi5jb20vaGFkbGV5L3J2ZXN0KTogYGluc3RhbGwucGFja2FnZXMoInJ2ZXN0IilgLgoKMi4gTG9hZCBpdDoKCmBgYHtyfQpsaWJyYXJ5KHRpZHl2ZXJzZSkKbGlicmFyeShydmVzdCkKYGBgCgozLiBEb3dubG9hZCBbY20xMTEtc2ltcGxlX3NjcmlwdC5odG1sXShjbTExMS1zaW1wbGVfc2NyaXB0Lmh0bWwpIHRvIHlvdXIgcGFydGljaXBhdGlvbiByZXBvLgoKNC4gRXhwbG9yZSB0aGUgaHRtbCBzY3JpcHQsIGFuZCB0aGUgc3RydWN0dXJlIG9mIGh0bWwuCgoKIyBTY3JhcGluZyB3aXRoIGBydmVzdGA6IE92ZXJ2aWV3CgpPdmVyYWxsIHdvcmtmbG93IHdpdGggYHJ2ZXN0YDoKCjEuIFJlYWQgaW4gYSB3ZWJwYWdlIHdpdGggYHJlYWRfaHRtbCgpYC4KMi4gU2VsZWN0IHBhcnRzIG9mIHRoZSBwYWdlIHdpdGggYGh0bWxfbm9kZXMoKWAuCgktIE9wdGlvbmFsLCBlc3BlY2lhbGx5IHdoZW4gcmVhZGluZyB0YWJsZXMuCjMuIENvbnZlcnQgcGFydHMgb2YgdGhlIHNlbGVjdGVkIGh0bWwgdG8gUiBvYmplY3RzOgoJLSB0ZXh0OiBgaHRtbF90ZXh0KClgIGZvciB0aGUgYWN0dWFsIHRleHQgYmV0d2VlbiB0aGUgdGFncywgYnV0IGFsc28gcmVsZXZhbnQgYXJlOgoJCS0gYGh0bWxfbmFtZSgpYCBmb3IgdGhlIG5hbWUgb2YgdGhlIChoaWdoZXN0IGxldmVsKSB0YWcgaXRzZWxmLAoJCS0gYGh0bWxfYXR0cnMoKWAvYGh0bWxfYXR0cigpYCBmb3IgdGhlIGF0dHJpYnV0ZXMuCgktIHRpYmJsZXM6IGBodG1sX3RhYmxlKClgCgojIyBUb2dldGhlcjoKCldlJ2xsIHVzZSBgcnZlc3RgIHRvIHJlYWQgaW4gcGFydHMgb2YgYGNtMTExLXNpbXBsZV9zY3JpcHQuaHRtbGAgaW50byBSLgoKMS4gQXBwbHkgYHJlYWRfaHRtbCgpYCB0byB0aGUgZmlsZTogcmVhZHMgaW4gdGhlIHBhZ2UsIG91dHB1dHMgYSBzcGVjaWFsIFIgb2JqZWN0LgoKYGBge3J9CnNpbXBsZV9wYWdlIDwtIHJlYWRfaHRtbCguL2NtMTExLXNpbXBsZV9zY3JpcHQuaHRtbCIpCmBgYAoKMi4gUGlwZSB0aGUgb3V0cHV0IGludG8gYGh0bWxfc3RydWN0dXJlKClgOiB3aWxsIHByaW50IHRoZSBodG1sIHRvIHNjcmVlbi4KCmBgYHtyfQpzaW1wbGVfcGFnZSAlPiUgaHRtbF9zdHJ1Y3R1cmUoKQpgYGAKCjMuIEFwcGx5IGBodG1sX3RleHQoKWAgdG8gYHNpbXBsZV9wYWdlYDogZ2l2ZXMgbWUgYWxsIHRoZSB0ZXh0IChub3QgdGhlIHRhZ3MpLgoKYGBge3J9CgpgYGAKCjQuIGBodG1sX25vZGVzKClgOiBzZWxlY3RzIG9ubHkgcmVsZXZhbnQgcGFydHMgb2YgdGhlIGh0bWwsIGNvbnN0cnVjdGluZyBhIChzcGVjaWFsKSBsaXN0IG9mIGFsbCByZWxldmFudCBwaWVjZXMuIAoJLSBFeGFtcGxlOiBzZWxlY3QgYWxsIHRleHQgYmV0d2VlbiBwYXJhZ3JhcGggdGFncy4KCS0gRXhhbXBsZTogc2VsZWN0IGFsbCBoeXBlcmxpbmsgdGV4dC4KCS0gRXhhbXBsZTogc2VsZWN0IGFsbCB0YWdzIHdpdGggdGhlICJ3aWtpIiBpZCAoSGludDogYCN3aWtpYCkKNS4gVGhlbiwgcGlwZSBpbnRvIGBodG1sX3RleHQoKWAuCgpgYGB7cn0Kc2ltcGxlX3BhZ2UgJT4lIAoJaHRtbF9ub2RlcyhGSUxMX1RISVNfSU4pCnNpbXBsZV9wYWdlICU+JSAKCWh0bWxfbm9kZXMoRklMTF9USElTX0lOKQpzaW1wbGVfcGFnZSAlPiUgCglodG1sX25vZGVzKEZJTExfVEhJU19JTikKYGBgCgoKIyMgWW91ciBUdXJuLCBSb3VuZCAxCgpQcmFjdGljZSB3aXRoIENTUyBzZWxlY3Rpb24hIFBhcnRuZXIgdXAsIGFuZCBzZWUgaG93IG1hbnkgbGV2ZWxzIHlvdSBjYW4gY29tcGxldGUgaW4gdGhlIFtDU1Mgc2VsZWN0b3IgZ2FtZV0oaHR0cDovL2ZsdWtlb3V0LmdpdGh1Yi5pby8pLgoKIyMgWW91ciBUdXJuLCBSb3VuZCAyCgpSZXR1cm4gdGhlIHRleHQgaW4gYHNpbXBsZV9wYWdlYCBjb250YWluZWQgd2l0aGluOgoKMS4gYWxsIGA8YT5gIHRhZ3Mgd2l0aGluIGA8cD5gIHRhZ3MuCgpgYGB7cn0Kc2ltcGxlX3BhZ2UgJT4lIAoJaHRtbF9ub2RlcyhGSUxMX1RISVNfSU4pICU+JSAKCUZJTExfVEhJU19JTgpgYGAKCjIuIGFueSB0YWcuCgpgYGB7cn0Kc2ltcGxlX3BhZ2UgJT4lIAoJaHRtbF9ub2RlcyhGSUxMX1RISVNfSU4pICU+JSAKCUZJTExfVEhJU19JTgpgYGAKCgojIyBSZWFkaW5nIHRoZSB0YWdzCgpXZSBjYW4gZXh0cmFjdCBvdGhlciB0aGluZ3MgYmVzaWRlcyB0aGUgdGV4dCBiZXR3ZWVuIHRoZSB0YWdzOgoKLSBgaHRtbF9uYW1lKClgIGdpdmVzIHRoZSBuYW1lIG9mIHRoZSB0YWdzLiBUcnkgaXQgd2l0aCBgaHRtbF9ub2RlcygqKWAuCgpgYGB7cn0Kc2ltcGxlX3BhZ2UgJT4lIAoJaHRtbF9ub2RlcygiKiIpCmBgYAoKLSBgaHRtbF9hdHRycygpYCBnaXZlcyBhbGwgYXR0cmlidXRlcyBvZiB0aGUgdGFncy4gVHJ5IGl0IHdpdGggYGh0bWxfbm9kZXMoImEiKWA6CgpgYGB7cn0Kc2ltcGxlX3BhZ2UgJT4lIAoJaHRtbF9ub2RlcygiYSIpCmBgYAoKLSBgaHRtbF9hdHRyKClgIChub3QgcGx1cmFsKSBleHRyYWN0cyBhIHZlY3RvciBvZiB0aGUgYXR0cmlidXRlIGNvbnRlbnRzIGJ5IHRoZSBgbmFtZWAgYXJndW1lbnQuIFRyeSBgbmFtZT0iaHJlZiJgIHdpdGggYGh0bWxfbm9kZXMoImEiKWA6CgpgYGB7cn0Kc2ltcGxlX3BhZ2UgJT4lIAoJaHRtbF9ub2RlcygiYSIpCmBgYAoKCi0gTWFrZSBhIHRpYmJsZSBvZiBoeXBlcmxpbmsgdGV4dCBhbmQgdGhlaXIgYXNzb2NpYXRlZCB1cmwnczoKCmBgYHtyfQp0aWJibGUoCgl0ZXh0ID0gRklMTF9USElTX0lOLAoJdXJsICA9IEZJTExfVEhJU19JTgopCmBgYAoKIyMgV2hlbiBDU1Mgc2VsZWN0aW9uIGdldHMgaGFyZGVyCgpMZXQncyBleHRyYWN0IHRoZSBzb25ncyB0aGF0IGFwcGVhciBvbiBbS2FuZSBCcm93bidzIHBhZ2Ugb24gbXVzaXhtYXRjaF0oaHR0cHM6Ly93d3cubXVzaXhtYXRjaC5jb20vc2VhcmNoL2thbmUlMjBicm93bikuCgpWaWV3aW5nIHRoZSBzb3VyY2UgdG8gZmluZCB0aGUgQ1NTIGlzIGhvcnJlbmRvdXMuIEluIGNvbWVzIFtgU2VsZWN0b3JHYWRnZXRgXShodHRwczovL3NlbGVjdG9yZ2FkZ2V0LmNvbS8pISBWaXNpdCB0aGUgcGFnZSB0byBpbnN0YWxsIHRoZSBnYWRnZXQuCgoxLiBVc2UgdGhlIGdhZGdldCB0byBzZWxlY3QgdGhlIHNvbmdzLiAKMi4gUHV0IHRoZSBDU1Mgc2VsZWN0aW9uIGluIHRoZSBgaHRtbF9ub2RlcygpYC4KCmBgYHtyfQoKYGBgCgojIyBSZWFkaW5nIGEgdGFibGUKCkdvYWw6IGV4dHJhY3QgdGhlIFdpa2lwZWRpYSB0YWJsZSBvZiB0aGUgW3RhbGxlc3Qgc3RlZWwgcm9sbGVyIGNvYXN0ZXJzXShodHRwczovL2VuLndpa2lwZWRpYS5vcmcvd2lraS9MaXN0X29mX3JvbGxlcl9jb2FzdGVyX3JhbmtpbmdzI1RhbGxlc3Rfc3RlZWxfcm9sbGVyX2NvYXN0ZXJzKSBpbiB0aGUgd29ybGQgd2l0aCBgaHRtbF90YWJsZSgpYC4KCmBgYHtyfQpyZWFkX2h0bWwoImh0dHBzOi8vZW4ud2lraXBlZGlhLm9yZy93aWtpL0xpc3Rfb2Zfcm9sbGVyX2NvYXN0ZXJfcmFua2luZ3MiKSAlPiUgCglGSUxMX1RISVNfSU4KYGBgCgoKIyBEYXRhIHN0cnVjdHVyZXMgYW5kIEltcG9ydGluZwoKV2UndmUgYWxyZWFkeSBzZWVuIGByZWFkcmAsIGJ1dCB3aGF0IGFib3V0IGltcG9ydGluZyBvdGhlciBkYXRhIHR5cGVzPwoKLSBKU09OLCB3aXRoIHRoZSBganNvbmxpdGVgIHBhY2thZ2UuIEV4YW1wbGVzIGZyb20gdGhlIGBmcm9tSlNPTigpYCBkb2N1bWVudGF0aW9uOgoKYGBge3J9CmZyb21KU09OKCd7ImNpdHkiIDogIlpcXHUwMEZDcmljaCJ9JykgIyBBIGxpc3QKZnJvbUpTT04oImh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vdXNlcnMvaGFkbGV5L29yZ3MiKSAlPiUgCglnbGltcHNlKCkgIyBBIGRhdGEgZnJhbWUKdG9KU09OKG10Y2FycywgcHJldHR5PVRSVUUpCmBgYAoKCi0gWE1MLCB3aXRoIHRoZSBgeG1sMmAgcGFja2FnZSAoc2ltaWxhciB0byByZWFkaW5nIHdlYnBhZ2VzKS4KCS0gW0V4YW1wbGUgZnJvbSB3M2NzaG9vbHNdKGh0dHBzOi8vd3d3Lnczc2Nob29scy5jb20veG1sL3NpbXBsZS54bWwpCgpgYGB7cn0KcmVhZF94bWwoImh0dHBzOi8vd3d3Lnczc2Nob29scy5jb20veG1sL3NpbXBsZS54bWwiKSAlPiUgCglhc19saXN0KCkKYGBgCgoKT3RoZXJzOgoKLSBbYGdvb2dsZWRyaXZlYF0oaHR0cHM6Ly9nb29nbGVkcml2ZS50aWR5dmVyc2Uub3JnLykKLSBTZWUgdGhlIFt0aWR5dmVyc2UgbGlzdGluZyBvZiBpbXBvcnQgcGFja2FnZXNdKGh0dHBzOi8vd3d3LnRpZHl2ZXJzZS5vcmcvcGFja2FnZXMvI2ltcG9ydCku</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiQ2xhc3MgTWVldGluZyAxMTogR2V0dGluZyBEYXRhIGZyb20gdGhlIFdlYiwgUGFydCAxIgpvdXRwdXQ6CiAgICBodG1sX25vdGVib29rOgogICAgICAgIHRvYzogdHJ1ZQogICAgICAgIHRoZW1lOiBjZXJ1bGVhbgogICAgICAgIG51bWJlcl9zZWN0aW9uczogdHJ1ZQplZGl0b3Jfb3B0aW9uczogCiAgY2h1bmtfb3V0cHV0X3R5cGU6IGlubGluZQotLS0KCiMgTW90aXZhdGlvbgoKVG9kYXkncyB0b3BpYzogc2NyYXBpbmcgdGhlIHdlYi4KClRoaXMgbWVhbnMgcmVhZGluZyB3ZWJwYWdlcyBsaWtlIFt0aGlzIHdpa2lwZWRpYSBwYWdlXShodHRwczovL2VuLndpa2lwZWRpYS5vcmcvd2lraS9MaXN0X29mX3JvbGxlcl9jb2FzdGVyX3JhbmtpbmdzKSBhbmQgcHV0dGluZyByZWxldmFudCBpbmZvIGludG8gUi4KCiMgR2V0dGluZyBTdGFydGVkCgoxLiBJbnN0YWxsIFtgcnZlc3RgXShodHRwczovL2dpdGh1Yi5jb20vaGFkbGV5L3J2ZXN0KTogYGluc3RhbGwucGFja2FnZXMoInJ2ZXN0IilgLgoKMi4gTG9hZCBpdDoKCmBgYHtyfQpsaWJyYXJ5KHRpZHl2ZXJzZSkKbGlicmFyeShydmVzdCkKYGBgCgozLiBEb3dubG9hZCBbY20xMTEtc2ltcGxlX3NjcmlwdC5odG1sXShjbTExMS1zaW1wbGVfc2NyaXB0Lmh0bWwpIHRvIHlvdXIgcGFydGljaXBhdGlvbiByZXBvLgoKNC4gRXhwbG9yZSB0aGUgaHRtbCBzY3JpcHQsIGFuZCB0aGUgc3RydWN0dXJlIG9mIGh0bWwuCgoKIyBTY3JhcGluZyB3aXRoIGBydmVzdGA6IE92ZXJ2aWV3CgpPdmVyYWxsIHdvcmtmbG93IHdpdGggYHJ2ZXN0YDoKCjEuIFJlYWQgaW4gYSB3ZWJwYWdlIHdpdGggYHJlYWRfaHRtbCgpYC4KMi4gU2VsZWN0IHBhcnRzIG9mIHRoZSBwYWdlIHdpdGggYGh0bWxfbm9kZXMoKWAuCgktIE9wdGlvbmFsLCBlc3BlY2lhbGx5IHdoZW4gcmVhZGluZyB0YWJsZXMuCjMuIENvbnZlcnQgcGFydHMgb2YgdGhlIHNlbGVjdGVkIGh0bWwgdG8gUiBvYmplY3RzOgoJLSB0ZXh0OiBgaHRtbF90ZXh0KClgIGZvciB0aGUgYWN0dWFsIHRleHQgYmV0d2VlbiB0aGUgdGFncywgYnV0IGFsc28gcmVsZXZhbnQgYXJlOgoJCS0gYGh0bWxfbmFtZSgpYCBmb3IgdGhlIG5hbWUgb2YgdGhlIChoaWdoZXN0IGxldmVsKSB0YWcgaXRzZWxmLAoJCS0gYGh0bWxfYXR0cnMoKWAvYGh0bWxfYXR0cigpYCBmb3IgdGhlIGF0dHJpYnV0ZXMuCgktIHRpYmJsZXM6IGBodG1sX3RhYmxlKClgCgojIyBUb2dldGhlcjoKCldlJ2xsIHVzZSBgcnZlc3RgIHRvIHJlYWQgaW4gcGFydHMgb2YgYGNtMTExLXNpbXBsZV9zY3JpcHQuaHRtbGAgaW50byBSLgoKMS4gQXBwbHkgYHJlYWRfaHRtbCgpYCB0byB0aGUgZmlsZTogcmVhZHMgaW4gdGhlIHBhZ2UsIG91dHB1dHMgYSBzcGVjaWFsIFIgb2JqZWN0LgoKYGBge3J9CnNpbXBsZV9wYWdlIDwtIHJlYWRfaHRtbCgiLi9jbTExMS1zaW1wbGVfc2NyaXB0Lmh0bWwiKQpgYGAKCjIuIFBpcGUgdGhlIG91dHB1dCBpbnRvIGBodG1sX3N0cnVjdHVyZSgpYDogd2lsbCBwcmludCB0aGUgaHRtbCB0byBzY3JlZW4uCgpgYGB7cn0Kc2ltcGxlX3BhZ2UgJT4lIGh0bWxfc3RydWN0dXJlKCkKYGBgCgozLiBBcHBseSBgaHRtbF90ZXh0KClgIHRvIGBzaW1wbGVfcGFnZWA6IGdpdmVzIG1lIGFsbCB0aGUgdGV4dCAobm90IHRoZSB0YWdzKS4KCmBgYHtyfQpzaW1wbGVfcGFnZSAlPiUgIGh0bWxfdGV4dCgpCmBgYAoKNC4gYGh0bWxfbm9kZXMoKWA6IHNlbGVjdHMgb25seSByZWxldmFudCBwYXJ0cyBvZiB0aGUgaHRtbCwgY29uc3RydWN0aW5nIGEgKHNwZWNpYWwpIGxpc3Qgb2YgYWxsIHJlbGV2YW50IHBpZWNlcy4gCgktIEV4YW1wbGU6IHNlbGVjdCBhbGwgdGV4dCBiZXR3ZWVuIHBhcmFncmFwaCB0YWdzLgoJLSBFeGFtcGxlOiBzZWxlY3QgYWxsIGh5cGVybGluayB0ZXh0LgoJLSBFeGFtcGxlOiBzZWxlY3QgYWxsIHRhZ3Mgd2l0aCB0aGUgIndpa2kiIGlkIChIaW50OiBgI3dpa2lgKQo1LiBUaGVuLCBwaXBlIGludG8gYGh0bWxfdGV4dCgpYC4KCmBgYHtyfQpzaW1wbGVfcGFnZSAlPiUgCglodG1sX25vZGVzKCJwIikgJT4lIAoJaHRtbF90ZXh0KCkKc2ltcGxlX3BhZ2UgJT4lIAoJaHRtbF9ub2RlcygiYSIpICU+JSAKCWh0bWxfdGV4dCgpCnNpbXBsZV9wYWdlICU+JSAKCWh0bWxfbm9kZXMoIiN3aWtpIikgJT4lIAoJaHRtbF90ZXh0KCkKYGBgCgoKIyMgWW91ciBUdXJuLCBSb3VuZCAxCgpQcmFjdGljZSB3aXRoIENTUyBzZWxlY3Rpb24hIFBhcnRuZXIgdXAsIGFuZCBzZWUgaG93IG1hbnkgbGV2ZWxzIHlvdSBjYW4gY29tcGxldGUgaW4gdGhlIFtDU1Mgc2VsZWN0b3IgZ2FtZV0oaHR0cDovL2ZsdWtlb3V0LmdpdGh1Yi5pby8pLgoKIyMgWW91ciBUdXJuLCBSb3VuZCAyCgpSZXR1cm4gdGhlIHRleHQgaW4gYHNpbXBsZV9wYWdlYCBjb250YWluZWQgd2l0aGluOgoKMS4gYWxsIGA8YT5gIHRhZ3Mgd2l0aGluIGA8cD5gIHRhZ3MuCgpgYGB7cn0Kc2ltcGxlX3BhZ2UgJT4lIAoJaHRtbF9ub2RlcygicCBhIikgJT4lIAoJaHRtbF90ZXh0KCkKYGBgCgoyLiBhbnkgdGFnLgoKYGBge3J9CnNpbXBsZV9wYWdlICU+JSAKCWh0bWxfbm9kZXMoIioiKSAlPiUgCglodG1sX3RleHQoKQpgYGAKCgojIyBSZWFkaW5nIHRoZSB0YWdzCgpXZSBjYW4gZXh0cmFjdCBvdGhlciB0aGluZ3MgYmVzaWRlcyB0aGUgdGV4dCBiZXR3ZWVuIHRoZSB0YWdzOgoKLSBgaHRtbF9uYW1lKClgIGdpdmVzIHRoZSBuYW1lIG9mIHRoZSB0YWdzLiBUcnkgaXQgd2l0aCBgaHRtbF9ub2RlcygqKWAuCgpgYGB7cn0Kc2ltcGxlX3BhZ2UgJT4lIAoJaHRtbF9ub2RlcygiKiIpICU+JSAKCWh0bWxfbmFtZSgpCmBgYAoKLSBgaHRtbF9hdHRycygpYCBnaXZlcyBhbGwgYXR0cmlidXRlcyBvZiB0aGUgdGFncy4gVHJ5IGl0IHdpdGggYGh0bWxfbm9kZXMoImEiKWA6CgpgYGB7cn0Kc2ltcGxlX3BhZ2UgJT4lIAoJaHRtbF9ub2RlcygiYSIpICU+JSAKCWh0bWxfYXR0cnMoKQpgYGAKCi0gYGh0bWxfYXR0cigpYCAobm90IHBsdXJhbCkgZXh0cmFjdHMgYSB2ZWN0b3Igb2YgdGhlIGF0dHJpYnV0ZSBjb250ZW50cyBieSB0aGUgYG5hbWVgIGFyZ3VtZW50LiBUcnkgYG5hbWU9ImhyZWYiYCB3aXRoIGBodG1sX25vZGVzKCJhIilgOgoKYGBge3J9CnNpbXBsZV9wYWdlICU+JSAKCWh0bWxfbm9kZXMoImEiKSAlPiUgCglodG1sX2F0dHIobmFtZT0iaHJlZiIpCmBgYAoKCi0gTWFrZSBhIHRpYmJsZSBvZiBoeXBlcmxpbmsgdGV4dCBhbmQgdGhlaXIgYXNzb2NpYXRlZCB1cmwnczoKCmBgYHtyfQp0aWJibGUoCgl0ZXh0ID0ge3NpbXBsZV9wYWdlICU+JSAKCWh0bWxfbm9kZXMoImEiKSAlPiUgCglodG1sX3RleHQoKX0sCgl1cmwgID0ge3NpbXBsZV9wYWdlICU+JSAKCWh0bWxfbm9kZXMoImEiKSAlPiUgCglodG1sX2F0dHIobmFtZT0iaHJlZiIpfQopCmBgYAoKIyMgV2hlbiBDU1Mgc2VsZWN0aW9uIGdldHMgaGFyZGVyCgpMZXQncyBleHRyYWN0IHRoZSBzb25ncyB0aGF0IGFwcGVhciBvbiBbS2FuZSBCcm93bidzIHBhZ2Ugb24gbXVzaXhtYXRjaF0oaHR0cHM6Ly93d3cubXVzaXhtYXRjaC5jb20vc2VhcmNoL2thbmUlMjBicm93bikuCgpWaWV3aW5nIHRoZSBzb3VyY2UgdG8gZmluZCB0aGUgQ1NTIGlzIGhvcnJlbmRvdXMuIEluIGNvbWVzIFtgU2VsZWN0b3JHYWRnZXRgXShodHRwczovL3NlbGVjdG9yZ2FkZ2V0LmNvbS8pISBWaXNpdCB0aGUgcGFnZSB0byBpbnN0YWxsIHRoZSBnYWRnZXQuCgoxLiBVc2UgdGhlIGdhZGdldCB0byBzZWxlY3QgdGhlIHNvbmdzLiAKMi4gUHV0IHRoZSBDU1Mgc2VsZWN0aW9uIGluIHRoZSBgaHRtbF9ub2RlcygpYC4KCmBgYHtyfQpyZWFkX2h0bWwoImh0dHBzOi8vd3d3Lm11c2l4bWF0Y2guY29tL3NlYXJjaC9rYW5lJTIwYnJvd24iKSAlPiUgCglodG1sX25vZGVzKCcudGl0bGUgc3BhbicpICU+JSAKCWh0bWxfdGV4dCgpCgpgYGAKCiMjIFJlYWRpbmcgYSB0YWJsZQoKR29hbDogZXh0cmFjdCB0aGUgV2lraXBlZGlhIHRhYmxlIG9mIHRoZSBbdGFsbGVzdCBzdGVlbCByb2xsZXIgY29hc3RlcnNdKGh0dHBzOi8vZW4ud2lraXBlZGlhLm9yZy93aWtpL0xpc3Rfb2Zfcm9sbGVyX2NvYXN0ZXJfcmFua2luZ3MjVGFsbGVzdF9zdGVlbF9yb2xsZXJfY29hc3RlcnMpIGluIHRoZSB3b3JsZCB3aXRoIGBodG1sX3RhYmxlKClgLgoKYGBge3J9CnJlYWRfaHRtbCgiaHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTGlzdF9vZl9yb2xsZXJfY29hc3Rlcl9yYW5raW5ncyIpICU+JSAKCWh0bWxfdGFibGUoZmlsbD1UUlVFKSAlPiUgCgkuW1syXV0KYGBgCgoKIyBEYXRhIHN0cnVjdHVyZXMgYW5kIEltcG9ydGluZwoKV2UndmUgYWxyZWFkeSBzZWVuIGByZWFkcmAsIGJ1dCB3aGF0IGFib3V0IGltcG9ydGluZyBvdGhlciBkYXRhIHR5cGVzPwoKLSBKU09OLCB3aXRoIHRoZSBganNvbmxpdGVgIHBhY2thZ2UuIEV4YW1wbGVzIGZyb20gdGhlIGBmcm9tSlNPTigpYCBkb2N1bWVudGF0aW9uOgoKYGBge3J9CmxpYnJhcnkoanNvbmxpdGUpCmZyb21KU09OKCd7ImNpdHkiIDogIlpcXHUwMEZDcmljaCJ9JykgIyBBIGxpc3QKCmZyb21KU09OKCJodHRwczovL2FwaS5naXRodWIuY29tL3VzZXJzL2hhZGxleS9vcmdzIikgJT4lIAoJZ2xpbXBzZSgpICMgQSBkYXRhIGZyYW1lCnRvSlNPTihtdGNhcnMsIHByZXR0eT1UUlVFKQpgYGAKCgotIFhNTCwgd2l0aCB0aGUgYHhtbDJgIHBhY2thZ2UgKHNpbWlsYXIgdG8gcmVhZGluZyB3ZWJwYWdlcykuCgktIFtFeGFtcGxlIGZyb20gdzNjc2hvb2xzXShodHRwczovL3d3dy53M3NjaG9vbHMuY29tL3htbC9zaW1wbGUueG1sKQoKYGBge3J9CmxpYnJhcnkoeG1sMikKcmVhZF94bWwoImh0dHBzOi8vd3d3Lnczc2Nob29scy5jb20veG1sL3NpbXBsZS54bWwiKSAlPiUgCglhc19saXN0KCkKYGBgCgoKT3RoZXJzOgoKLSBbYGdvb2dsZWRyaXZlYF0oaHR0cHM6Ly9nb29nbGVkcml2ZS50aWR5dmVyc2Uub3JnLykKLSBTZWUgdGhlIFt0aWR5dmVyc2UgbGlzdGluZyBvZiBpbXBvcnQgcGFja2FnZXNdKGh0dHBzOi8vd3d3LnRpZHl2ZXJzZS5vcmcvcGFja2FnZXMvI2ltcG9ydCku</div>
 
 
 
