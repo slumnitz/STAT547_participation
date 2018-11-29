@@ -14,7 +14,7 @@ Class folder | Participation
 [cm106](https://github.com/slumnitz/STAT547_participation/tree/master/cm105_cm106/powers) | Part II
 [cm107](https://github.com/slumnitz/STAT547_participation/tree/master/cm107_cm108/bc-liquor) | shiny apps, and related tools
 [cm108](https://github.com/slumnitz/STAT547_participation/tree/master/cm107_cm108/bc-liquor) | Part II
-[cm109](https://github.com/slumnitz/STAT547_participation/tree/master/cm109_cm110/cm109-automation_examples) | Automate tasks and pipelines
-[cm110](https://github.com/slumnitz/STAT547_participation/tree/master/cm109_cm110/cm109-automation_examples) | Part II
-[cm111]() | Get data from the web
-[cm112]() | Part II
+[cm109](https://github.com/slumnitz/STAT547_participation/tree/master/cm109/cm109-automation_examples) | Automate tasks and pipelines
+[cm110](https://github.com/slumnitz/STAT547_participation/tree/master/cm110/word_histogram) | Part II
+[cm111](https://github.com/slumnitz/STAT547_participation/blob/master/cm111/cm111-exercise.Rmd) | Get data from the web
+[cm112](https://github.com/slumnitz/STAT547_participation/blob/master/cm112/cm112-exercise.Rmd) | Part II
